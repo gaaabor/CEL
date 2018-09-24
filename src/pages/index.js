@@ -1,11 +1,10 @@
 // Basic React Stuff
 import React, { Fragment } from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Zoom from 'react-reveal/Zoom'
 
 // Building blocks
-// import Hero from '../components/Hero'
 import Features from '../components/Home/Features'
 import Shortcuts from '../components/Home/Shortcuts'
 
@@ -21,10 +20,10 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Fragment>
-        {/* <Img
-          sizes={this.props.data.heroImage.sizes}
+        <Img
+          fluid={this.props.data.heroImage.childImageSharp.fluid}
           style={{ height: '90vh' }}
-        /> */}
+        />
         <div className="arrow__box">
           <a className="scroll" href="#trainings">
             <Icon block="arrow" name="arrow-down" />
@@ -72,22 +71,14 @@ class IndexPage extends React.Component {
 
 export default IndexPage
 
-// export const pageQuery = graphql`
-//   query IndexQuery {
-//     heroImage: imageSharp(id: { regex: "/hero.jpg/" }) {
-//       sizes(maxWidth: 1920) {
-//         ...GatsbyImageSharpSizes
-//       }
-//     }
-//   }
-// `
-
-// export const pageQuery = graphql`
-//   query HeroImageQuery {
-//     heroImage: imageSharp(id: { regex: "/hero/" }) {
-//       sizes(maxWidth: 1900) {
-//         ...GatsbyImageSharpSizes
-//       }
-//     }
-//   }
-// `
+export const homeQuery = graphql`
+  query {
+    heroImage: file(relativePath: { eq: "hero.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

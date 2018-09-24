@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Capoeira Espirito Livre',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
