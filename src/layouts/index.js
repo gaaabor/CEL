@@ -1,5 +1,6 @@
 // Basic React Stuff
 import React from 'react'
+import Transition from '../components/Transition'
 
 import Link from 'gatsby-link'
 import Menu from 'react-burger-menu/lib/menus/push'
@@ -17,19 +18,15 @@ import Footer from '../components/Footer'
 // Styles
 import '../styles/main.scss'
 
-class Layout extends React.Component {
-  render() {
-    return (
-      <div id="App">
-        <Sidebar />
-        <div id="page-wrap">
-          {this.props.children}
-          <Footer />
-        </div>
-      </div>
-    )
-  }
-}
+const Layout = ({ children, location }) => (
+  <div id="App">
+    <Sidebar />
+    <div id="page-wrap">
+      <Transition location={location}>{children}</Transition>
+      <Footer />
+    </div>
+  </div>
+)
 
 export default Layout
 

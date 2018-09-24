@@ -87,7 +87,7 @@ class Footer extends React.Component {
         <div className="footer">
           <p>2018 | Capoeira Espirito Livre</p>
           <p>
-            Web Design: <a>Gabor Bencsik</a>
+            Web Design: <a href="#">Gabor Bencsik</a>
           </p>
         </div>
       </footer>

@@ -9,7 +9,6 @@
     "gatsby-plugin-layout": "^1.0.1",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-page-transitions": "^1.0.7",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-sharp": "^2.0.5",
@@ -21,7 +20,8 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
-    "react-tabs": "^2.3.0"
+    "react-tabs": "^2.3.0",
+    "react-transition-group": "^2.4.0"
   },
   "keywords": [
     "gatsby"
