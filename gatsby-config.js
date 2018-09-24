@@ -7,11 +7,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Capoeira Espirito Livre',
+        short_name: 'CEL',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#67CC00',
+        theme_color: '#67CC00',
         display: 'minimal-ui',
         icon: 'src/images/logo.png', // This path is relative to the root of the site.
       },
