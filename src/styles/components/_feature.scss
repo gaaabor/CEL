@@ -1,0 +1,35 @@
+.feature {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 0.8px;
+ 
+   @media only screen and (max-width: $bp-tab-sm) {
+    grid-template-columns: 1fr;
+  }
+ 
+   &__item {
+ 
+      &--mozgas {
+         border-right: $border;
+      }
+ 
+      &--zene {
+         border-right: $border;
+      }
+ 
+      @media only screen and (max-width: $bp-tab-sm) {
+        border-right: none;
+      }
+   }
+ 
+   &__pic {
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+   }
+ 
+   &__text {
+      margin: 6rem 8rem 4rem 8rem;
+      min-height: 35vh;
+   }
+}

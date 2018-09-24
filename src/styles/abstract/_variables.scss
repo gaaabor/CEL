@@ -1,0 +1,39 @@
+////////////////////////////////////////////////////
+// COLOR VARIABLES
+////////////////////////////////////////////////////
+$color-primary: #67CC00;
+$color-primary-light: tranparentize(#66CC00, 0.2);
+$color-primary-dark-1: #480;
+$color-primary-dark-2: #407f00;
+
+$color-black: #222222;
+$color-black-light-1: #333;
+$color-black-light-2: #444;
+$color-white: #fff;
+$color-white-smoke: #F5F5F5;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-grey-divider: rgba(170, 170, 170, .4);
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+$border: 0.2px solid $color-primary-dark-2;
+$border-thin: 0.1px solid $color-primary-dark-2;
+
+////////////////////////////////////////////////////
+// FONT VARIABLES
+////////////////////////////////////////////////////
+$font-heading: 'Teko', sans-serif;
+$font-para: 'Montserrat', sans-serif;
+
+////////////////////////////////////////////////////
+// RESPONSIVE BREAKPOINTS
+////////////////////////////////////////////////////
+$bp-laptop-lg: 90em;  // 1440px
+$bp-laptop-sm: 75em;  // 1200px
+$bp-tab-lg: 62.5em;  // 1000px
+$bp-tab-sm: 50em;   // 800px
+$bp-phone-lg: 37.5em;  // 600px
+$bp-phone-sm: 23.75em // 350px

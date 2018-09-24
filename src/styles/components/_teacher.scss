@@ -1,0 +1,42 @@
+.teacher {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+ 
+   @media only screen and (max-width: $bp-tab-sm) {
+      grid-template-columns: 1fr;
+    }
+ 
+   &__item {
+      border-right: 0.2px solid $color-primary;
+ 
+      @media only screen and (max-width: $bp-tab-sm) {
+        border-right: none;
+      }
+   }
+ 
+   &__pic-box {
+      overflow: hidden;
+      position: relative;
+   }
+ 
+   &__pic {
+      height: 60vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: all .3s ease;
+      position: relative;
+ 
+      @media only screen and (max-width: $bp-laptop-sm) {
+         height: 60vh;
+       }
+   }
+ 
+   &__text-box {
+     padding: 5rem;
+   }
+ 
+   &__para {
+     margin-top: 3rem;
+   }
+}
