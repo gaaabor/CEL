@@ -13,7 +13,7 @@ module.exports = {
         background_color: '#67CC00',
         theme_color: '#67CC00',
         display: 'minimal-ui',
-        icon: 'src/images/logo.png', // This path is relative to the root of the site.
+        icon: 'src/images/manifest_logo.png',
       },
     },
     'gatsby-plugin-offline',
