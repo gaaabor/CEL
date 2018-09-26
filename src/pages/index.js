@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
 
 // Building blocks
 import Features from '../components/Home/Features'
@@ -30,12 +30,14 @@ class IndexPage extends React.Component {
           </a>
         </div>
 
-        <Zoom fraction={0.95}>
-          <section className="trainings" id="trainings">
+        <section className="trainings" id="trainings">
+          <Fade bottom>
             <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm title1">
               Edzéseink
             </h1>
+          </Fade>
 
+          <Fade bottom>
             <p className="trainings__text margin-bottom-md text1">
               Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
               Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
@@ -49,19 +51,19 @@ class IndexPage extends React.Component {
               javítása, egy nyitott, barátságos, elfogadó és támogató közösség
               megteremtése.
             </p>
+          </Fade>
 
+          <Fade bottom>
             <Button
               link="/trainings"
               text="MIKOR ÉS HOL EDZÜNK"
               color="green"
               iconName="calendar"
             />
-          </section>
-        </Zoom>
+          </Fade>
+        </section>
 
-        <Zoom>
-          <Features />
-        </Zoom>
+        <Features />
 
         <Shortcuts />
       </Fragment>
