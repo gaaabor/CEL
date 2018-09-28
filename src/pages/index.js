@@ -1,27 +1,27 @@
-// Basic React Stuff
 import React, { Fragment } from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Fade from 'react-reveal/Fade'
 
-// Building blocks
 import Features from '../components/Home/Features'
 import Shortcuts from '../components/Home/Shortcuts'
-
-// Individual components
-import Button from '../components/Button'
 import Icon from '../components/Icon'
+import Button from '../components/Button'
 
-// Styles
-import '../styles/main.scss'
-
-// Page render
 class IndexPage extends React.Component {
   render() {
+    const {
+      heroImage,
+      mozgasImage,
+      harcImage,
+      zeneImage,
+      nyelvImage,
+    } = this.props.data
+
     return (
       <Fragment>
         <Img
-          fluid={this.props.data.heroImage.childImageSharp.fluid}
+          fluid={heroImage.childImageSharp.fluid}
           style={{ height: '90vh' }}
         />
         <div className="arrow__box">
@@ -31,13 +31,13 @@ class IndexPage extends React.Component {
         </div>
 
         <section className="trainings" id="trainings">
-          <Fade bottom>
+          <Fade>
             <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm title1">
               Edzéseink
             </h1>
           </Fade>
 
-          <Fade bottom>
+          <Fade>
             <p className="trainings__text margin-bottom-md text1">
               Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
               Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
@@ -53,7 +53,7 @@ class IndexPage extends React.Component {
             </p>
           </Fade>
 
-          <Fade bottom>
+          <Fade>
             <Button
               link="/trainings"
               text="MIKOR ÉS HOL EDZÜNK"
@@ -63,7 +63,12 @@ class IndexPage extends React.Component {
           </Fade>
         </section>
 
-        <Features />
+        <Features
+          mozgasImage={mozgasImage.childImageSharp.fluid}
+          harcImage={harcImage.childImageSharp.fluid}
+          zeneImage={zeneImage.childImageSharp.fluid}
+          nyelvImage={nyelvImage.childImageSharp.fluid}
+        />
 
         <Shortcuts />
       </Fragment>
@@ -77,10 +82,35 @@ export const homeQuery = graphql`
   query {
     heroImage: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1920) {
+        fluid(maxWidth: 1920, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
+    mozgasImage: file(relativePath: { eq: "mozgas.jpg" }) {
+      ...fluidImage
+    }
+    harcImage: file(relativePath: { eq: "harc.jpg" }) {
+      ...fluidImage
+    }
+    zeneImage: file(relativePath: { eq: "zene.jpg" }) {
+      ...fluidImage
+    }
+    nyelvImage: file(relativePath: { eq: "nyelv.jpg" }) {
+      ...fluidImage
+    }
+  }
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000, quality: 70) {
+        ...GatsbyImageSharpFluid
+      }
+    }
   }
 `
+
+Fade.defaultProps = {
+  bottom: true,
+  fraction: 0.5,
+  duration: 400,
+}
