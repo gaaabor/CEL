@@ -8,13 +8,20 @@ const Teachers = () => (
     query={graphql`
       query {
         magraoImage: file(relativePath: { eq: "magrao.jpg" }) {
-          ...oneThirdImage
+          ...teacherImage
         }
         profImage: file(relativePath: { eq: "prof.jpg" }) {
-          ...oneThirdImage
+          ...teacherImage
         }
         sapiImage: file(relativePath: { eq: "sapi.jpg" }) {
-          ...oneThirdImage
+          ...teacherImage
+        }
+      }
+      fragment teacherImage on File {
+        childImageSharp {
+          fluid(maxWidth: 640, quality: 60) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     `}

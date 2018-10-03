@@ -81,19 +81,30 @@ export default IndexPage
 export const homeQuery = graphql`
   query {
     heroImage: file(relativePath: { eq: "hero.jpg" }) {
-      ...fullImage
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     mozgasImage: file(relativePath: { eq: "mozgas.jpg" }) {
-      ...halfImage
+      ...featureImage
     }
     harcImage: file(relativePath: { eq: "harc.jpg" }) {
-      ...halfImage
+      ...featureImage
     }
     zeneImage: file(relativePath: { eq: "zene.jpg" }) {
-      ...halfImage
+      ...featureImage
     }
     nyelvImage: file(relativePath: { eq: "nyelv.jpg" }) {
-      ...halfImage
+      ...featureImage
+    }
+  }
+  fragment featureImage on File {
+    childImageSharp {
+      fluid(maxWidth: 950, quality: 60) {
+        ...GatsbyImageSharpFluid
+      }
     }
   }
 `

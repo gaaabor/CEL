@@ -20,27 +20,3 @@ const Layout = ({ children, location }) => (
 )
 
 export default Layout
-
-export const siteQuery = graphql`
-  fragment fullImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1920, quality: 70) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-  fragment halfImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1000, quality: 60) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-  fragment oneThirdImage on File {
-    childImageSharp {
-      fluid(maxWidth: 700, quality: 60) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
