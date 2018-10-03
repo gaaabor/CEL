@@ -1,14 +1,13 @@
-// Basic React Stuff
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 
-// Component render
 const Teacher = props => (
   <div className={`teacher__item teacher__item--${props.item}`}>
     <div className="teacher__pic-box">
-      <img
+      <Img
+        fluid={props.fluid}
         className={`teacher__pic teacher__pic--${props.item}`}
-        src={props.image}
       />
     </div>
 
@@ -22,10 +21,8 @@ const Teacher = props => (
 
 export default Teacher
 
-// PropTypes
 Teacher.propTypes = {
   item: PropTypes.string,
-  image: PropTypes.object,
   apelido: PropTypes.string,
   name: PropTypes.string,
   text: PropTypes.string,

@@ -1,15 +1,6 @@
-// Basic React Stuff
 import React from 'react'
+import { graphql } from 'gatsby'
 import Transition from '../components/Transition'
-
-import Link from 'gatsby-link'
-import Menu from 'react-burger-menu/lib/menus/push'
-
-import Icon from '../components/Icon'
-import logo from '../images/logo.png'
-
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 
 // Building blocks
 import Sidebar from '../components/Sidebar'
@@ -30,7 +21,26 @@ const Layout = ({ children, location }) => (
 
 export default Layout
 
-// // PropTypes
-// Layout.propTypes = {
-//   children: PropTypes.func,
-// }
+export const siteQuery = graphql`
+  fragment fullImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1920, quality: 70) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  fragment halfImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000, quality: 60) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  fragment oneThirdImage on File {
+    childImageSharp {
+      fluid(maxWidth: 700, quality: 60) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`

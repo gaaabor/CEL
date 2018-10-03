@@ -1,34 +1,28 @@
-// Basic React Stuff
-import React, { Component } from 'react'
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
-// Individual components
 import Teacher from './Teacher'
 
-// Images & Assets
-import prof from '../images/prof.jpg'
-import magrao from '../images/magrao.jpg'
-import sapi from '../images/sapi.jpg'
-
-const profImg = {
-  backgroundImage: `url(${prof})`,
-}
-
-const magraoImg = {
-  backgroundImage: `url(${magrao})`,
-}
-
-const sapiImg = {
-  backgroundImage: `url(${sapi})`,
-}
-
-// Building block render
-class Teachers extends Component {
-  render() {
-    return (
+const Teachers = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        magraoImage: file(relativePath: { eq: "magrao.jpg" }) {
+          ...oneThirdImage
+        }
+        profImage: file(relativePath: { eq: "prof.jpg" }) {
+          ...oneThirdImage
+        }
+        sapiImage: file(relativePath: { eq: "sapi.jpg" }) {
+          ...oneThirdImage
+        }
+      }
+    `}
+    render={data => (
       <section className="teacher">
         <Teacher
           item="magrao"
-          image={magraoImg}
+          fluid={data.magraoImage.childImageSharp.fluid}
           apelido="Instrutor Magrao"
           name="Balogh Tamás"
           text="Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra, sapien fo dang hendrerizzle, libero urna hendrerit
@@ -36,7 +30,7 @@ class Teachers extends Component {
         />
         <Teacher
           item="prof"
-          image={profImg}
+          fluid={data.profImage.childImageSharp.fluid}
           apelido="Professor Cabeludo"
           name="Oláh Krisztián"
           text="Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra, sapien fo dang hendrerizzle, libero urna hendrerit
@@ -44,15 +38,15 @@ class Teachers extends Component {
         />
         <Teacher
           item="sapi"
-          image={sapiImg}
+          fluid={data.sapiImage.childImageSharp.fluid}
           apelido="Instrutor Sapinho"
           name="Soós Levente"
           text="Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra, sapien fo dang hendrerizzle, libero urna hendrerit
             leo, nizzle condimentum get down get down sapien at nunc. Donec eu fizzle. Vestibulum quis away."
         />
       </section>
-    )
-  }
-}
+    )}
+  />
+)
 
 export default Teachers
