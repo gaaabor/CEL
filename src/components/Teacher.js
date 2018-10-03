@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
+import { StaticQuery } from 'gatsby'
 
 const Teacher = props => (
   <div className={`teacher__item teacher__item--${props.item}`}>
@@ -27,3 +28,5 @@ Teacher.propTypes = {
   name: PropTypes.string,
   text: PropTypes.string,
 }
+
+// data.magraoImage.childImageSharp.fluid

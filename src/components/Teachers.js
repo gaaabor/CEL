@@ -62,3 +62,5 @@ const Teachers = () => (
 )
 
 export default Teachers
+
+// data.magraoImage.childImageSharp.fluid
