@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Teacher from './Teacher'
@@ -34,7 +35,12 @@ const Teachers = () => (
       <section className="teacher">
         <Teacher
           item="magrao"
-          fluid={data.magraoImage.childImageSharp.fluid}
+          image={
+            <Img
+              fluid={data.magraoImage.childImageSharp.fluid}
+              className="teacher__pic"
+            />
+          }
           apelido="Instrutor Magrao"
           name="Balogh Tamás"
           text="Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra, sapien fo dang hendrerizzle, libero urna hendrerit
@@ -42,7 +48,12 @@ const Teachers = () => (
         />
         <Teacher
           item="prof"
-          fluid={data.profImage.childImageSharp.fluid}
+          image={
+            <Img
+              fluid={data.profImage.childImageSharp.fluid}
+              className="teacher__pic"
+            />
+          }
           apelido="Professor Cabeludo"
           name="Oláh Krisztián"
           text="Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra, sapien fo dang hendrerizzle, libero urna hendrerit
@@ -50,7 +61,12 @@ const Teachers = () => (
         />
         <Teacher
           item="sapi"
-          fluid={data.sapiImage.childImageSharp.fluid}
+          image={
+            <Img
+              fluid={data.sapiImage.childImageSharp.fluid}
+              className="teacher__pic"
+            />
+          }
           apelido="Instrutor Sapinho"
           name="Soós Levente"
           text="Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra, sapien fo dang hendrerizzle, libero urna hendrerit
