@@ -16,15 +16,18 @@ const capoeiraPage = () => (
         }
       }
     `}
-    render={data => (
-      <div>
-        <h1 className="heading-1 heading-1--green">CAPOEIRA PAGE</h1>
-        <Img
-          fluid={data.capoeiraImage.childImageSharp.fluid}
-          style={{ height: '90vh' }}
-        />
-      </div>
-    )}
+    render={data => {
+      console.log(data)
+      return (
+        <div>
+          <h1 className="heading-1 heading-1--green">CAPOEIRA PAGE</h1>
+          <Img
+            fluid={data.capoeiraImage.childImageSharp.fluid}
+            style={{ height: '90vh' }}
+          />
+        </div>
+      )
+    }}
   />
 )
 
