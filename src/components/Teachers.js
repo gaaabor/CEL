@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 const Teachers = () => (
   <StaticQuery
     query={graphql`
-      query {
+      query teacherQuery {
         magraoImage: file(relativePath: { eq: "magrao.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 640, quality: 60) {
