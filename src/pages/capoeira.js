@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -17,7 +16,7 @@ const capoeiraPage = () => (
       }
     `}
     render={data => {
-      console.log(data)
+      console.log(data.capoeiraImage.childImageSharp.fluid)
       return (
         <div>
           <h1 className="heading-1 heading-1--green">CAPOEIRA PAGE</h1>
@@ -32,3 +31,5 @@ const capoeiraPage = () => (
 )
 
 export default capoeiraPage
+
+// Building static HTML for pages{ capoeiraImage: { childImageSharp: { fluid: [Object] } } }

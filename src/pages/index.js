@@ -18,6 +18,8 @@ class IndexPage extends React.Component {
       nyelvImage,
     } = this.props.data
 
+    console.log(heroImage.childImageSharp.fluid)
+
     return (
       <Fragment>
         <Img
