@@ -1,11 +1,12 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 
 const Feature = props => (
   <div className={`feature__item feature__item--${props.name}`}>
-    <div
+    <Img
+      fluid={props.fluid}
       className={`feature__pic feature__pic--${props.name}`}
-      style={props.image}
     />
     <div className={`feature__text feature__text--${props.name}`}>
       <div>
@@ -25,5 +26,4 @@ Feature.propTypes = {
   name: PropTypes.string,
   title: PropTypes.string,
   text: PropTypes.string,
-  image: PropTypes.object,
 }

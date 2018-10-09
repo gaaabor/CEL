@@ -1,6 +1,5 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
 
 const Teacher = props => (
   <div className={`teacher__item teacher__item--${props.item}`}>
@@ -16,5 +15,3 @@ const Teacher = props => (
 )
 
 export default Teacher
-
-// fluid={data.magraoImage.childImageSharp.fluid}

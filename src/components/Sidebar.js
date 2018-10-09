@@ -4,7 +4,6 @@ import Menu from 'react-burger-menu/lib/menus/push'
 
 import Icon from './Icon'
 
-// Images & Assets
 import logo from '../images/logo.png'
 
 class Sidebar extends React.Component {

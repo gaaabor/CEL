@@ -6,10 +6,6 @@ import { graphql } from 'gatsby'
 import Teachers from '../components/Teachers'
 
 class groupPage extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <Fragment>

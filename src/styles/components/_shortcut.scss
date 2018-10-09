@@ -1,51 +1,31 @@
 .shortcut {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-
    @media only screen and (max-width: $bp-tab-sm) {
       grid-template-columns: 1fr;
-    }
-
+   }
    &__item {
       border-right: 0.2px solid $color-primary-dark-2;
-
+      position: relative;
       @media only screen and (max-width: $bp-tab-sm) {
-        border-right: none;
+         border-right: none;
       }
    }
-
-   &__pic-box {
-      overflow: hidden;
-      position: relative;
-   }
-
    &__pic {
       height: 50vh;
       width: 100%;
       background-size: cover;
       background-position: center;
-      transition: all .3s ease;
       position: relative;
-
       @media only screen and (max-width: $bp-laptop-sm) {
          height: 60vh;
-       }
-
-      &:hover {
-         transform: scale(1.1);
-
-         .shortcut__pic-title {
-            display: none;
-         }
       }
-
       &-title {
          position: absolute;
-         top: 40%;
-         left: 15%;
+         bottom: 5%;
+         left: 5%;
       }
    }
-
    &__overlay {
       position: absolute;
       top: 0;
@@ -55,20 +35,17 @@
       height: 100%;
       width: 100%;
       opacity: 0;
-      transition: .3s ease;
-      background-color: rgba($color-primary, .7);
-
-      &-title {
-         position: absolute;
-         top: 40%;
-         left: 15%;
-      }
-
-      &:hover {
+      transition: 0.3s ease;
+      background-color: rgba($color-black, 0.7);
+      .shortcut__pic-title {
          opacity: 1;
       }
+      &:hover {
+         opacity: 1; //  .shortcut__pic-title {
+         //     transform: translateY(-50px);
+         //  }
+      }
    }
-
    &__text-box {
       min-height: 40vh;
       display: flex;
@@ -76,7 +53,6 @@
       align-items: center;
       padding: 3rem 0 3rem 0;
    }
-
    &__text {
       text-align: center;
       width: 30rem;
