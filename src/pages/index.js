@@ -10,52 +10,56 @@ import Button from '../components/Button'
 
 const IndexPage = ({ data }) => (
   <Fragment>
-    <Img
-      fluid={data.heroImage.childImageSharp.fluid}
-      style={{ height: '90vh' }}
-    />
-    <div className="arrow__box">
-      <a className="scroll" href="#trainings">
-        <Icon block="arrow" name="arrow-down" />
-      </a>
-    </div>
+    <header>
+      <Img
+        fluid={data.heroImage.childImageSharp.fluid}
+        style={{ height: '90vh' }}
+      />
+      <div className="arrow__box">
+        <a className="scroll" href="#trainings">
+          <Icon block="arrow" name="arrow-down" />
+        </a>
+      </div>
+    </header>
 
-    <section className="trainings" id="trainings">
-      <Fade>
-        <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm title1">
-          Edzéseink
-        </h1>
-      </Fade>
+    <main>
+      <section className="trainings" id="trainings">
+        <Fade>
+          <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm title1">
+            Edzéseink
+          </h1>
+        </Fade>
 
-      <Fade>
-        <p className="trainings__text margin-bottom-md text1">
-          Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
-          Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
-          hatékonyabb átadása mellett nagy hangsúlyt fektetnek a megfelelő
-          testi, lelki és szellemi egészség kialakítására, és megőrzésére.
-          <br />
-          <br />
-          <br />
-          Célunk az élethosszig tartó rendszeres testmozgás iránti igény
-          kialakítása és kielégítése, az életminőség nagy mértékű és tartós
-          javítása, egy nyitott, barátságos, elfogadó és támogató közösség
-          megteremtése.
-        </p>
-      </Fade>
+        <Fade>
+          <p className="trainings__text margin-bottom-md text1">
+            Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
+            Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
+            hatékonyabb átadása mellett nagy hangsúlyt fektetnek a megfelelő
+            testi, lelki és szellemi egészség kialakítására, és megőrzésére.
+            <br />
+            <br />
+            <br />
+            Célunk az élethosszig tartó rendszeres testmozgás iránti igény
+            kialakítása és kielégítése, az életminőség nagy mértékű és tartós
+            javítása, egy nyitott, barátságos, elfogadó és támogató közösség
+            megteremtése.
+          </p>
+        </Fade>
 
-      <Fade>
-        <Button
-          link="/trainings"
-          text="MIKOR ÉS HOL EDZÜNK"
-          color="green"
-          iconName="calendar"
-        />
-      </Fade>
-    </section>
+        <Fade>
+          <Button
+            link="/trainings"
+            text="MIKOR ÉS HOL EDZÜNK"
+            color="green"
+            iconName="calendar"
+          />
+        </Fade>
+      </section>
 
-    <Features />
+      <Features />
 
-    <Shortcuts />
+      <Shortcuts />
+    </main>
   </Fragment>
 )
 

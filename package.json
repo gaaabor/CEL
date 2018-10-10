@@ -17,6 +17,7 @@
     "react": "^16.5.1",
     "react-burger-menu": "^2.5.2",
     "react-dom": "^16.5.2",
+    "react-floating-button-menu": "^1.0.9",
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
     "react-tabs": "^2.3.0",

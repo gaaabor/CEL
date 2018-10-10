@@ -108,6 +108,32 @@ class Sidebar extends React.Component {
               </Link>
             </li>
           </ul>
+
+          <div class="social__box">
+            <div class="social">
+              <a
+                href="https://www.youtube.com/channel/UCgbYtjFmdAffgUoptWjYf-w"
+                target="_blank"
+                class="social__link"
+              >
+                <Icon block="social" name="youtube" />
+              </a>
+              <a
+                href="https://www.instagram.com/capoeira_espirito_livre_cel/"
+                target="_blank"
+                class="social__link"
+              >
+                <Icon block="social" name="instagram" />
+              </a>
+              <a
+                href="https://www.facebook.com/cel.capoeira/"
+                target="_blank"
+                class="social__link"
+              >
+                <Icon block="social" name="facebook" />
+              </a>
+            </div>
+          </div>
         </nav>
       </Menu>
     )

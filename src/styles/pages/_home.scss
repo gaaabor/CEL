@@ -1,31 +1,29 @@
 .arrow {
-
-   &__box {
-     width: 7rem;
-     height: 7rem;
-     background-color: $color-primary;
-     border-radius: 50%;
-     margin: 0 auto;
-     transform: translateY(-3.5rem);
-     box-shadow: 0 1rem 3rem rgba($color-black, .1);
-     position: relative;
-     cursor: pointer;
-   }
- 
-   &__icon {
-   fill: $color-white;
-   position: absolute;
-   top: 1.5rem;
-   left: 1.65rem;
-   width: 4rem;
-   height: 4rem;
-   animation: bounce 2s infinite;
-   }
+  &__box {
+    width: 7rem;
+    height: 7rem;
+    background-color: $color-primary;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: translateY(-3.5rem);
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    position: relative;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: $color-white;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.65rem;
+    width: 4rem;
+    height: 4rem;
+    animation: bounce 2s infinite;
+  }
 }
 
 .trainings {
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,31 +1,17 @@
-@import "abstract/variables";
-@import "abstract/mixins";
-
-@import "./base/animations";
-@import "./base/base";
-@import "./base/typography";
-@import "./base/utilities";
-
-@import "./components/button";
-@import "./components/feature";
-@import "./components/footer";
-@import "./components/hamburger";
-@import "./components/hero";
-@import "./components/shortcut";
-@import "./components/sidebar";
-@import "./components/teacher";
-@import "./components/twotwo";
-
-@import "./pages/home";
-@import "./pages/trainings";
-
-
-
-
-
-
-
-
-
-
-
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+@import './components/button';
+@import './components/feature';
+@import './components/footer';
+@import './components/hamburger';
+@import './components/hero';
+@import './components/shortcut';
+@import './components/sidebar';
+@import './components/teacher';
+@import './components/twotwo';
+@import './pages/home';
+@import './pages/trainings';
