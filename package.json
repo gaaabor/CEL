@@ -21,7 +21,8 @@
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
     "react-tabs": "^2.3.0",
-    "react-transition-group": "^2.4.0"
+    "react-transition-group": "^2.4.0",
+    "smooth-scroll": "^14.2.1"
   },
   "keywords": [
     "gatsby"

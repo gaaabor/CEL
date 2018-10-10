@@ -8,13 +8,20 @@ import Shortcuts from '../components/Home/Shortcuts'
 import Icon from '../components/Icon'
 import Button from '../components/Button'
 
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]')
+}
+
 const IndexPage = ({ data }) => (
   <Fragment>
-    <header>
+    <header className="hero__container">
       <Img
         fluid={data.heroImage.childImageSharp.fluid}
-        style={{ height: '90vh' }}
+        className="hero__image"
       />
+      <h1 className="hero__heading">Capoeira Espirito Livre</h1>
       <div className="arrow__box">
         <a className="scroll" href="#trainings">
           <Icon block="arrow" name="arrow-down" />
