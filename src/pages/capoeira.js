@@ -4,12 +4,16 @@ import { graphql } from 'gatsby'
 
 const capoeiraPage = ({ data }) => (
   <Fragment>
-    <div>
-      <h1 className="heading-1 heading-1--green">CAPOEIRA PAGE</h1>
-      <Img
-        fluid={data.capoeiraImage.childImageSharp.fluid}
-        style={{ height: '90vh' }}
-      />
+    <div className="page__container">
+      <div className="iframe__container iframe-container-4x3">
+        <iframe
+          className="iframe"
+          src="https://www.youtube.com/embed/HgFEUPgpwc4?rel=0&amp;showinfo=0"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        />
+      </div>
     </div>
   </Fragment>
 )
