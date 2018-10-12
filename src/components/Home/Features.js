@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import Fade from 'react-reveal/Fade'
 
 import Feature from './Feature'
 import Button from '../Button'
@@ -71,12 +72,14 @@ const Features = () => (
           />
         </div>
         <div className="feature__cta-container">
-          <Button
-            link="/capoeira"
-            text="Fedezd fel a capoeira világát"
-            color="green"
-            iconName="book"
-          />
+          <Fade bottom={true} fraction={0.5} duration={400}>
+            <Button
+              link="/capoeira"
+              text="Fedezd fel a capoeira világát"
+              color="green"
+              iconName="book"
+            />
+          </Fade>
         </div>
       </section>
     )}
