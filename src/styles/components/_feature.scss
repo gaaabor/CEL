@@ -1,56 +1,53 @@
 .feature {
-   &__container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 0.8px;
-      @media only screen and (max-width: $bp-tab-sm) {
-         grid-template-columns: 1fr;
-      }
-   }
-   &__item {
-      &--mozgas {
-         border-right: $border;
-      }
-      &--zene {
-         border-right: $border;
-      }
-      @media only screen and (max-width: $bp-tab-sm) {
-         border-right: none;
-      }
-   }
-   &__pic {
-      height: 50vh;
-      background-size: cover;
-      background-position: center;
-   }
-   &__heading {
-      margin-bottom: 5rem;
-      @media only screen and (max-width: $bp-laptop-lg) {
-         margin-bottom: 2.5rem;
-      }
-   }
-   &__text {
-      margin: 6rem 8rem 4rem 8rem;
-      min-height: 35vh;
-      @media only screen and (max-width: $bp-laptop-lg) {
-         margin: 5rem 5rem 4rem 5rem;
-      }
-      @media only screen and (max-width: $bp-laptop-lg) {
-         min-height: 24vh;
-      }
-   }
-   &__cta {
-      &-section {
-         text-align: center;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         padding: 10rem 0 10rem 0;
-      }
-      &-heading {
-         font-size: 2rem;
-         font-weight: 500;
-         margin-bottom: 4rem;
-      }
-   }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.8px;
+    @include respond(tab-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    &--mozgas {
+      border-right: $border;
+    }
+    &--zene {
+      border-right: $border;
+    }
+    @include respond(tab-sm) {
+      border-right: none;
+    }
+  }
+  &__pic {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+  }
+  &__heading {
+    margin-bottom: 5rem;
+    @include respond(laptop-lg) {
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__text-box {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 9rem 0 9rem 0;
+    @include respond(laptop-lg) {
+      max-width: 87%;
+    }
+    @include respond(laptop-sm) {
+      padding: 7rem 0 7rem 0;
+    }
+  }
+  &__text {
+    @include paragraphText;
+  }
+  &__cta-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0 10rem 0;
+  }
 }

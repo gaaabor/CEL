@@ -11,7 +11,7 @@ html {
   @include respond(laptop-lg) {
     font-size: 55%;
   }
-  @include respond(laptop-sm) {
+  @include respond(tab-sm) {
     font-size: 50%;
   }
 }

@@ -70,13 +70,10 @@ const Features = () => (
             a (brazil) portugállal."
           />
         </div>
-        <div className="feature__cta-section">
-          <h1 className="feature__cta-heading">
-            Ismerd meg a capoeira világát és történelmét.
-          </h1>
+        <div className="feature__cta-container">
           <Button
             link="/capoeira"
-            text="Olvass tovább"
+            text="Fedezd fel a capoeira világát"
             color="green"
             iconName="book"
           />

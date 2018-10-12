@@ -1,49 +1,49 @@
 .btn:link,
 .btn:visited {
-   text-transform: uppercase;
-   text-decoration: none;
-   transition: all 0.2s;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 1rem 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
 }
 
 .btn-green {
-   background-color: $color-primary;
-   color: $color-white;
-   &:hover,
-   &:active {
-      background-color: $color-primary-dark-1;
-   }
-   .btn__icon {
-      fill: $color-white;
-   }
+  background-color: $color-primary;
+  color: $color-white;
+  &:hover,
+  &:active {
+    background-color: $color-primary-dark-1;
+  }
+  .btn__icon {
+    fill: $color-white;
+  }
 }
 
 .btn-ghost {
-   background: none;
-   border: 1px solid $color-primary;
-   color: $color-primary;
-   &:hover {
-      background-color: $color-primary;
-      color: $color-white;
-      .btn__icon {
-         fill: $color-white;
-      }
-   }
-   .btn__icon {
-      fill: $color-primary;
-   }
+  background: none;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    .btn__icon {
+      fill: $color-white;
+    }
+  }
+  .btn__icon {
+    fill: $color-primary;
+  }
 }
 
 .btn__icon {
-   width: 2.5rem;
-   height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .btn__text {
-   font-size: 1.4rem;
-   font-weight: 500;
-   margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 1.5rem;
 }
