@@ -1,85 +1,61 @@
-.accordion__content {
-}
-
 .table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+  @media only screen and (max-width: $bp-laptop-sm) {
+    grid-template-columns: 1fr;
+  }
   &__box {
     text-align: center;
     display: grid;
-
     &--location2,
     &--times2 {
-      grid-template-rows: 1fr repeat(2, 2fr);
+      grid-template-rows: repeat(2, 1fr);
     }
-
     &--location1 {
       grid-template-rows: 1fr 4fr;
       border-bottom: $border;
       border-right: $border;
     }
-
     &--times3 {
       grid-template-rows: 1fr repeat(3, 1.333fr);
-
       .table__icon-box {
         border-bottom: $border;
       }
-
       div:nth-of-type(3) {
         border-top: $border;
         border-bottom: $border;
       }
-
       div:nth-of-type(4) {
         border-bottom: $border;
       }
     }
   }
-
   &__icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   &__icon {
     width: 5rem;
     height: 5rem;
     fill: $color-primary;
   }
-
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3.5rem;
-
+    padding: 1rem;
     &--1 {
-      background-color: $color-black-light-1;
-      // outline: $border;
+      background-color: $color-black-light-1; // outline: $border;
     }
-
-    // &--2 {
-    //    // border-bottom: $border;
-    //    // border-right: $border;
-    // }
-
-    // &--alone {
-    //    // border-top: $border;
-    // }
-
     .heading-4 > span {
       font-weight: 300;
     }
   }
-
   &__pic {
     background-size: cover;
     width: auto;
     height: 400px;
-
     @media only screen and (max-width: $bp-tab-sm) {
       display: none;
     }
@@ -89,8 +65,11 @@
 .location-link:link,
 .location-link:visited {
   color: $color-white;
-  outline: none;
   text-decoration: none;
+  border-bottom: 0.1px solid white;
+  &:hover {
+    border-bottom: 0.1px solid $color-primary;
+  }
 }
 
 .location-link:hover {

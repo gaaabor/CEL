@@ -11,7 +11,7 @@ const Feature = props => (
     />
     <div className={`feature__text feature__text--${props.name}`}>
       <Fade bottom={true} fraction={0.5} duration={400}>
-        <h1 className="heading-1 heading-1--green margin-bottom-sm">
+        <h1 className="feature__heading heading-1 heading-1--green">
           {props.title}
         </h1>
         <p className="feature__para">{props.text}</p>

@@ -26,7 +26,7 @@ const Shortcuts = () => (
       }
     `}
     render={data => (
-      <section className="shortcut">
+      <section className="shortcut margin-bottom-lg">
         <Shortcut
           name="csoport"
           title="csoport"

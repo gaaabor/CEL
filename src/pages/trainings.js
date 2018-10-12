@@ -6,7 +6,7 @@ import TwoTwo from '../components/Trainings/TwoTwo'
 const trainingsPage = () => (
   <Fragment>
     <Tabs>
-      <div className="bal">
+      <div className="location-list">
         <TabList>
           <Tab>Budapest</Tab>
           <Tab>Dunakeszi</Tab>

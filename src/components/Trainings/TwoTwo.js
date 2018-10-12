@@ -6,10 +6,6 @@ const TwoTwo = props => {
   return (
     <div className="table">
       <div className="table__box table__box--location2">
-        <div className="table__icon-box">
-          <Icon block="table" name="map-marker" />
-        </div>
-
         <div className="table__item table__item--1">
           <h4 className="heading-4">{props.placeOne}</h4>
           <h5 className="heading-5">
@@ -36,10 +32,6 @@ const TwoTwo = props => {
         </div>
       </div>
       <div className="table__box table__box--times2">
-        <div className="table__icon-box">
-          <Icon block="table" name="calendar" />
-        </div>
-
         <div className="table__item table__item--1">
           <h4 className="heading-4">
             {props.timeOne}

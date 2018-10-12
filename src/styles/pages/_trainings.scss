@@ -2,27 +2,22 @@
   -webkit-tap-highlight-color: transparent;
   margin-top: 10rem;
   padding: 1rem;
-
   @media only screen and (max-width: $bp-phone-lg) {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 3fr 1fr;
   }
-
   &__tab-list {
     display: flex;
     justify-content: space-between;
     padding: 0;
-
     @media only screen and (max-width: $bp-phone-lg) {
       flex-direction: column;
     }
   }
-
   &__tab {
     width: 100%;
     list-style: none;
     padding: 0.8rem;
-
     font-size: 3.5rem;
     font-family: $font-heading;
     font-weight: 500;
@@ -30,34 +25,32 @@
     text-align: center;
     cursor: pointer;
     position: relative;
-
     transition: border-bottom 0.1s linear;
-
     &--selected {
       color: $color-primary;
-      border-bottom: $border-thick;
     }
-
     &:hover {
       color: $color-primary;
     }
-
     &:focus {
       box-shadow: none;
       border-color: $border;
       outline: none;
     }
   }
-
   &__tab-panel {
     display: none;
     opacity: 0;
     padding: 3rem;
-
     &--selected {
       display: block;
       opacity: 1;
       animation: fade-and-slide-in 250ms ease-out;
     }
   }
+}
+
+// TESTING
+.location-list {
+  order: 2;
 }
