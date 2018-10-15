@@ -8,7 +8,6 @@
     "gatsby-image": "^2.0.7",
     "gatsby-plugin-layout": "^1.0.1",
     "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.6",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-sharp": "^2.0.5",
@@ -18,12 +17,10 @@
     "react": "^16.5.1",
     "react-burger-menu": "^2.5.2",
     "react-dom": "^16.5.2",
-    "react-floating-button-menu": "^1.0.9",
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
     "react-tabs": "^2.3.0",
-    "react-transition-group": "^2.4.0",
-    "smooth-scroll": "^14.2.1"
+    "react-transition-group": "^2.4.0"
   },
   "keywords": [
     "gatsby"
