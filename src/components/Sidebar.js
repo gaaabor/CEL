@@ -5,6 +5,7 @@ import Menu from 'react-burger-menu/lib/menus/push'
 import Icon from './Icon'
 
 import logo from '../images/logo.png'
+import menu from '../images/menu.svg'
 
 class Sidebar extends React.Component {
   constructor(props) {
@@ -33,6 +34,7 @@ class Sidebar extends React.Component {
         onStateChange={state => this.handleStateChange(state)}
         pageWrapId={'page-wrap'}
         outerContainerId={'App'}
+        customBurgerIcon={<img src={menu} />}
       >
         <nav>
           <div className="nav-logo__box">

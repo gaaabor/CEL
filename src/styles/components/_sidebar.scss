@@ -1,15 +1,16 @@
 .bm-burger-button {
   position: fixed;
-  width: 36px;
+  width: 33px;
   height: 30px;
-  left: 25px;
-  top: 25px;
+  left: 0;
+  top: 10px;
   background: $color-primary;
   border-top: 10px solid $color-primary;
   border-right: 8px solid $color-primary;
   border-bottom: 8px solid $color-primary;
   border-left: 8px solid $color-primary;
-  border-radius: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   box-sizing: content-box;
 }

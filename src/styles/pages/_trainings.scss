@@ -1,7 +1,16 @@
+.trainings {
+  text-align: center;
+  &__heading {
+    margin-top: 3rem;
+    @include respond(phone-lg) {
+      padding-left: 5rem;
+    }
+  }
+}
+
 .react-tabs {
   -webkit-tap-highlight-color: transparent;
-  margin-top: 10rem;
-  padding: 1rem;
+  margin-top: 2rem;
   &__tab-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -21,14 +30,11 @@
     text-align: center;
     cursor: pointer;
     position: relative;
-    transition: border-bottom 0.1s linear;
+    transition: background-color 0.3s linear;
     border-right: $border;
     &--selected {
       color: $color-white;
       background-color: $color-primary;
-    }
-    &:hover {
-      background-color: rgba($color-primary, 0.3);
     }
     &:focus {
       box-shadow: none;
@@ -55,9 +61,4 @@
       animation: fade-and-slide-in 250ms ease-out;
     }
   }
-}
-
-// TESTING
-.location-list {
-  order: 2;
 }

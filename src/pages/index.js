@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => (
     </header>
 
     <main>
-      <section className="trainings" id="trainings">
+      <section className="introduction" id="trainings">
         <Fade>
           <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm title1">
             Edzéseink
@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => (
         </Fade>
 
         <Fade>
-          <p className="trainings__text margin-bottom-md text1">
+          <p className="introduction__text margin-bottom-md">
             Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
             Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
             hatékonyabb átadása mellett nagy hangsúlyt fektetnek a megfelelő

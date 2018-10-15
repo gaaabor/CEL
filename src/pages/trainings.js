@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-import TwoTwo from '../components/Trainings/TwoTwo'
+import Card from '../components/Trainings/Card'
 
 const trainingsPage = () => (
-  <Fragment>
+  <div className="trainings">
+    <h1 className="trainings__heading heading-1 heading-1--green">Edzéseink</h1>
     <Tabs>
       <div className="location-list">
         <TabList>
@@ -18,41 +19,52 @@ const trainingsPage = () => (
 
       <div className="panels">
         <TabPanel>
-          <TwoTwo
-            placeOne="KIKÖTŐ IFJÚSÁGI KÖZÖSSÉGI SZIGET"
-            locationOneLink="https://goo.gl/maps/SndJLbD8zqE2"
-            locationOne="(1156 ÚJPALOTA, NYÍRPALOTA ÚT 40.)"
-            timeOne="KEDD | 18h15 - 19h45"
-            typeOne="(Közös)"
-            placeTwo="ÚJPALOTAI SZABADIDŐ KÖZP. KÖZ. HÁZA"
-            locationTwoLink="https://goo.gl/maps/a33jTCh3ny22"
-            locationTwo="(1157 ÚJPALOTA, ZSÓKAVÁR UTCA 15.)"
-            timeTwo="CSÜTÖRTÖK | 18h15 - 19h45"
-            typeTwo="(Felnőtt)"
-          />
+          <div className="card__section">
+            <Card
+              dayOne="Kedd"
+              timeOne="18h15 - 19h45 (Közös)"
+              place="Kikötő Ifjúsági Közösségi Sziget"
+              locationLink="https://goo.gl/maps/SndJLbD8zqE2"
+              location="(1156 ÚJPALOTA, NYÍRPALOTA ÚT 40.)"
+            />
+            <Card
+              dayOne="Csütörtök"
+              timeOne="18h15 - 19h45 (Felnőtt)"
+              place="Újpalotai Szabadidő Közp. Köz. Háza"
+              locationLink="https://goo.gl/maps/a33jTCh3ny22"
+              location="(1157 ÚJPALOTA, ZSÓKAVÁR UTCA 15.)"
+            />
+          </div>
         </TabPanel>
         <TabPanel>
-          <h2>DUNAKESZI CONTENT</h2>
-          <p className="anyad">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-            magnam inventore expedita facere placeat temporibus ducimus
-            consequuntur, voluptatibus eaque hic quam dicta nemo unde architecto
-            quisquam voluptatum quasi error, impedit non sunt modi a esse
-            maiores! Dicta delectus ex, iusto magni debitis quasi! Sit, ipsum
-            molestiae voluptatum nobis assumenda facere eligendi dignissimos
-            quos expedita rerum aliquam labore magni unde nisi, quaerat error
-            perspiciatis voluptate corrupti explicabo sapiente omnis reiciendis
-          </p>
+          <div className="card__section">
+            <Card
+              dayOne="Hétfő"
+              timeOne="19h00 - 20h30 (Felnőtt)"
+              dayTwo="Szerda"
+              timeTwo="18h30 - 20h00 (Gyerek)"
+              dayThree="Péntek"
+              timeThree="18h30 - 20h00 (Közös)"
+              place="Szent István Általános Iskola"
+              locationLink="https://goo.gl/maps/wdc4WygWu7A2"
+              location="(2120 DUNAKESZI, REPÜLŐTÉRI UTCA 3.)"
+            />
+          </div>
         </TabPanel>
         <TabPanel>
-          <h2>VERES CONTENT</h2>
-          <p className="anyad">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-            magnam inventore expedita facere placeat temporibus ducimus
-            consequuntur, voluptatibus eaque hic quam dicta nemo unde architecto
-            quisquam voluptatum quasi error, impedit non sunt modi a esse
-            maiores! Dicta delectus ex, iusto magni debitis quasi! Sit, ipsum
-          </p>
+          <div className="card__section">
+            <Card
+              dayOne="Hétfő"
+              timeOne="16h30 - 18h00 (Közös)"
+              dayTwo="Szerda"
+              timeTwo="16h30 - 18h00 (Gyerek)"
+              dayThree="Péntek"
+              timeThree="16h30 - 18h00 (Felnőtt)"
+              place="Szent István Általános Iskola"
+              locationLink="https://goo.gl/maps/wdc4WygWu7A2"
+              location="(2120 DUNAKESZI, REPÜLŐTÉRI UTCA 3.)"
+            />
+          </div>
         </TabPanel>
         <TabPanel>
           <h2>GYOMRO CONTENT</h2>
@@ -62,7 +74,7 @@ const trainingsPage = () => (
         </TabPanel>
       </div>
     </Tabs>
-  </Fragment>
+  </div>
 )
 
 export default trainingsPage

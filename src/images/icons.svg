@@ -1,5 +1,9 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<title>menu</title>
+<path d="M0 21.647h32v-3.765h-32v3.765zM0 29.176h32v-3.765h-32v3.765zM0 14.118h32v-3.765h-32v3.765zM0 2.824v3.765h32v-3.765h-32z"></path>
+</symbol>
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <title>facebook</title>
 <path d="M12 10.667h-4v5.333h4v16h6.667v-16h4.856l0.477-5.333h-5.333v-2.223c0-1.273 0.256-1.777 1.487-1.777h3.847v-6.667h-5.077c-4.795 0-6.923 2.111-6.923 6.153v4.513z"></path>
