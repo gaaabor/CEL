@@ -10,8 +10,10 @@ const Layout = ({ children, location }) => (
   <div id="App">
     <Sidebar />
     <div id="page-wrap">
-      <Transition location={location}>{children}</Transition>
-      <Footer />
+      <Transition location={location}>
+        {children}
+        <Footer />
+      </Transition>
     </div>
   </div>
 )
