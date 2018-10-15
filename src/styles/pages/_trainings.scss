@@ -2,16 +2,12 @@
   -webkit-tap-highlight-color: transparent;
   margin-top: 10rem;
   padding: 1rem;
-  @media only screen and (max-width: $bp-phone-lg) {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-  }
   &__tab-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    @media only screen and (max-width: $bp-phone-lg) {
-      flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: $border;
+    @include respond(tab-sm) {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   &__tab {
@@ -26,16 +22,27 @@
     cursor: pointer;
     position: relative;
     transition: border-bottom 0.1s linear;
+    border-right: $border;
     &--selected {
-      color: $color-primary;
+      color: $color-white;
+      background-color: $color-primary;
     }
     &:hover {
-      color: $color-primary;
+      background-color: rgba($color-primary, 0.3);
     }
     &:focus {
       box-shadow: none;
       border-color: $border;
       outline: none;
+    }
+    @include respond(tab-sm) {
+      border-top: $border;
+      &:hover {
+        background-color: none;
+      }
+      &:last-of-type {
+        grid-column: span 2;
+      }
     }
   }
   &__tab-panel {
