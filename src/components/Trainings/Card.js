@@ -25,26 +25,3 @@ const Card = props => (
 )
 
 export default Card
-
-{
-  /* <Fade>
-<div className="card__body">
-  <div className="card__upper">
-    <h3 className="card__day">CSÜTÖRTÖK</h3>
-    <p className="card__time">18h15 - 19h45 (Felnőtt)</p>
-  </div>
-  <h3 className="card__lower">
-    <Icon block="card" name="map-marker" />
-    <h4 className="card__location">
-      Újpalotai Szabadidő Közp. Köz. háza
-    </h4>
-    <a
-      href="https://goo.gl/maps/SndJLbD8zqE2"
-      className="card__location-link"
-    >
-      (1156 ÚJPALOTA, NYÍRPALOTA ÚT 40.)
-    </a>
-  </h3>
-</div>
-</Fade> */
-}

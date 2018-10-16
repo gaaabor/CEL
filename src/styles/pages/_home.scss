@@ -42,18 +42,12 @@
 }
 
 .introduction {
-  max-width: 60%;
-  margin: 0 auto;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 5rem;
-  @include respond(laptop-lg) {
-    max-width: 75%;
-  }
+  @include centerTextContainer;
   @include respond(tab-sm) {
-    max-width: 90%;
     padding-bottom: 0;
   }
   &__text {

@@ -62,3 +62,11 @@
     }
   }
 }
+
+.equipment {
+  padding: 5rem 0 10rem 0;
+  @include centerTextContainer;
+  &__text {
+    @include paragraphText;
+  }
+}

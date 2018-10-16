@@ -5,12 +5,7 @@
   text-transform: uppercase;
   letter-spacing: 16px;
   line-height: 40px;
-  &--green {
-    color: $color-primary;
-  }
-  &--white {
-    color: $color-white;
-  }
+  color: $color-primary;
 }
 
 .heading-2 {
@@ -29,19 +24,4 @@
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.5px;
-}
-
-.teacher__para {
-  font-family: $font-para;
-  font-size: 1.7rem;
-  font-weight: 300; //   letter-spacing: 0.6px;
-  @media only screen and (max-width: $bp-tab-lg) {
-    font-size: 1.8rem;
-  }
-}
-
-#contact__h1 {
-  @media only screen and (max-width: $bp-phone-sm) {
-    font-size: 3rem;
-  }
 }

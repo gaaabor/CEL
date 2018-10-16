@@ -9,7 +9,7 @@ const Teacher = props => (
     <div className="teacher__text-box">
       <h1 className="heading-1 heading-1--green">{props.apelido}</h1>
       <h2 className="heading-2">{props.name}</h2>
-      <p className="teacher__para">{props.text}</p>
+      <p className="teacher__text">{props.text}</p>
     </div>
   </div>
 )

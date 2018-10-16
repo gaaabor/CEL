@@ -17,16 +17,16 @@ const IndexPage = ({ data }) => (
       />
       <h1 className="hero__heading">Capoeira Espirito Livre</h1>
       <div className="arrow__box">
-        <a className="scroll" href="#trainings">
+        <a className="scroll" href="#introduction">
           <Icon block="arrow" name="arrow-down" />
         </a>
       </div>
     </header>
 
     <main>
-      <section className="introduction" id="trainings">
+      <section className="introduction" id="introduction">
         <Fade>
-          <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm title1">
+          <h1 className="heading-1 margin-top-sm margin-bottom-sm">
             Edzéseink
           </h1>
         </Fade>

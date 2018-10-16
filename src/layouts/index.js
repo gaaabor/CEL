@@ -1,7 +1,7 @@
 import React from 'react'
 import Transition from '../components/Transition'
 
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar/Sidebar'
 import Footer from '../components/Footer'
 
 import '../styles/main.scss'

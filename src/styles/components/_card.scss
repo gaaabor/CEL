@@ -1,5 +1,5 @@
 .card {
-  &__section {
+  &__container {
     display: flex;
     justify-content: space-evenly;
     @include respond(tab-sm) {
@@ -10,10 +10,13 @@
   &__body {
     background-color: $color-black-light-1;
     text-align: center;
-    min-width: 300px;
+    min-width: 45%;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     margin-bottom: 2rem;
+    @include respond(tab-sm) {
+      min-width: 90%;
+    }
   }
   &__upper {
     display: flex;

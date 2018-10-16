@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Menu from 'react-burger-menu/lib/menus/push'
 
-import Icon from './Icon'
+import Icon from '../Icon'
 
-import logo from '../images/logo.png'
-import menu from '../images/menu.svg'
+import logo from '../../images/manifest_logo.png'
+import menu from '../../images/menu.svg'
 
 class Sidebar extends React.Component {
   constructor(props) {
@@ -36,14 +36,18 @@ class Sidebar extends React.Component {
         outerContainerId={'App'}
         customBurgerIcon={<img src={menu} />}
       >
-        <nav>
-          <div className="nav-logo__box">
-            <Link to="/" className="nav-logo" onClick={() => this.closeMenu()}>
-              <img src={logo} alt="CEL-logo" />
+        <div className="side-nav__container">
+          <div className="side-nav__logo-box">
+            <Link
+              to="/"
+              className="side-nav__logo-link"
+              onClick={() => this.closeMenu()}
+            >
+              <img className="side-nav__logo-img" src={logo} alt="CEL-logo" />
             </Link>
           </div>
 
-          <ul className="side-nav">
+          <ul className="side-nav__list">
             <li className="side-nav__item">
               <Link
                 className="side-nav__link"
@@ -112,31 +116,29 @@ class Sidebar extends React.Component {
           </ul>
 
           <div className="social__box">
-            <div className="social">
-              <a
-                href="https://www.youtube.com/channel/UCgbYtjFmdAffgUoptWjYf-w"
-                target="_blank"
-                className="social__link"
-              >
-                <Icon block="social" name="youtube" />
-              </a>
-              <a
-                href="https://www.instagram.com/capoeira_espirito_livre_cel/"
-                target="_blank"
-                className="social__link"
-              >
-                <Icon block="social" name="instagram" />
-              </a>
-              <a
-                href="https://www.facebook.com/cel.capoeira/"
-                target="_blank"
-                className="social__link"
-              >
-                <Icon block="social" name="facebook" />
-              </a>
-            </div>
+            <a
+              href="https://www.youtube.com/channel/UCgbYtjFmdAffgUoptWjYf-w"
+              target="_blank"
+              className="social__link"
+            >
+              <Icon block="social" name="youtube" />
+            </a>
+            <a
+              href="https://www.instagram.com/capoeira_espirito_livre_cel/"
+              target="_blank"
+              className="social__link"
+            >
+              <Icon block="social" name="instagram" />
+            </a>
+            <a
+              href="https://www.facebook.com/cel.capoeira/"
+              target="_blank"
+              className="social__link"
+            >
+              <Icon block="social" name="facebook" />
+            </a>
           </div>
-        </nav>
+        </div>
       </Menu>
     )
   }

@@ -1,4 +1,3 @@
-// Basic React stuff
 import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 
@@ -10,11 +9,9 @@ const groupPage = ({ data }) => (
     <header>
       <PageHeader fluid={data.csoportImage.childImageSharp.fluid} />
     </header>
-    <main style={{ textAlign: 'center' }}>
+    <main>
       <section className="kezdetek margin-top-sm margin-bottom-sm">
-        <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm">
-          A kezdetek
-        </h1>
+        <h1 className="heading-1 margin-top-sm margin-bottom-sm">A kezdetek</h1>
 
         <p className="kezdetek__text margin-bottom-md">
           Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
@@ -31,9 +28,7 @@ const groupPage = ({ data }) => (
         </p>
       </section>
       <section className="teachers">
-        <h1 className="heading-1 heading-1--green margin-top-sm margin-bottom-sm">
-          TANÁRAINK
-        </h1>
+        <h1 className="heading-1 margin-top-sm margin-bottom-sm">TANÁRAINK</h1>
         <Teachers />
       </section>
     </main>
