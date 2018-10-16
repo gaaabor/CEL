@@ -16,6 +16,7 @@ module.exports = {
         icon: 'src/images/manifest_logo.png',
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -29,7 +30,6 @@ module.exports = {
         path: `./src/images/`,
       },
     },
-    'gatsby-plugin-offline',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-layout',
