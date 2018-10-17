@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
         fluid={data.heroImage.childImageSharp.fluid}
         className="hero__image"
       />
-      <h1 className="hero__heading">Capoeira Espirito Livre</h1>
+      <h1 className="hero__heading">Hero Content</h1>
       <div className="arrow__box">
         <a className="scroll" href="#introduction">
           <Icon block="arrow" name="arrow-down" />
@@ -58,6 +58,7 @@ const IndexPage = ({ data }) => (
       </section>
 
       <Features />
+      <Shortcuts />
     </main>
   </Fragment>
 )

@@ -19,13 +19,17 @@
   background: $color-white;
 }
 
+.bm-cross-button > span {
+  top: 2px !important;
+}
+
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
 }
 
 .bm-cross {
   background: $color-primary;
+  width: 2px !important;
+  height: 20px !important;
 }
 
 .bm-menu {

@@ -6,6 +6,7 @@ import Icon from '../Icon'
 
 import logo from '../../images/manifest_logo.png'
 import menu from '../../images/menu.svg'
+import cross from '../../images/cross.svg'
 
 class Sidebar extends React.Component {
   constructor(props) {

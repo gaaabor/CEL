@@ -6,9 +6,7 @@
     height: 90vh;
   }
   &__heading {
-    position: absolute;
-    top: 20%;
-    left: 20%;
+    @include absCenter;
     font-family: $font-heading;
     line-height: 13rem;
     font-size: 5em;
