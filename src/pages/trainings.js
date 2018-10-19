@@ -104,8 +104,8 @@ const trainingsPage = () => (
     </section>
     <Fade bottom={true} fraction={0.5} duration={400}>
       <section className="equipment">
-        <h1 class="heading-1 margin-bottom-sm">Mire van szükséged</h1>
-        <p class="equipment__text">
+        <h1 className="heading-1 margin-bottom-sm">Mire van szükséged</h1>
+        <p className="equipment__text">
           Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra,
           sapien fo dang hendrerizzle, libero urna hendrerit leo, nizzle
           condimentum get down get down sapien at nunc. Donec eu fizzle.

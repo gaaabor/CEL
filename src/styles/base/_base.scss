@@ -23,15 +23,6 @@ body {
   color: $color-white;
   font-weight: 300;
   line-height: 1.6;
-}
-
-#App {
-  height: 100vh;
-}
-
-#page-wrap {
-  overflow: auto;
-  height: 100%;
   @media only screen and (min-width: $bp-laptop-sm) {
     &::-webkit-scrollbar {
       width: 1em;
@@ -44,4 +35,13 @@ body {
       outline: 1px solid slategrey;
     }
   }
+}
+
+#app {
+  height: 100%;
+}
+
+#page-wrap {
+  overflow: auto;
+  height: 100%;
 }

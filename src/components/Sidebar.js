@@ -2,11 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Menu from 'react-burger-menu/lib/menus/push'
 
-import Icon from '../Icon'
+import Icon from './Icon'
 
-import logo from '../../images/manifest_logo.png'
-import menu from '../../images/menu.svg'
-import cross from '../../images/cross.svg'
+import logo from '../images/manifest_logo.png'
+import menu from '../images/menu.svg'
+import cross from '../images/cross.svg'
 
 class Sidebar extends React.Component {
   constructor(props) {

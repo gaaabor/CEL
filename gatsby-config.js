@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Capoeira Espirito Livre',
+    url: 'https://dazzling-noyce-8e96d1.netlify.com',
+    description: 'Some description',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

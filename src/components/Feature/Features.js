@@ -7,29 +7,7 @@ import Button from '../Button'
 
 const Features = () => (
   <StaticQuery
-    query={graphql`
-      query featureQuery {
-        mozgasImage: file(relativePath: { eq: "mozgas.jpg" }) {
-          ...featureImage
-        }
-        harcImage: file(relativePath: { eq: "harc.jpg" }) {
-          ...featureImage
-        }
-        zeneImage: file(relativePath: { eq: "zene.jpg" }) {
-          ...featureImage
-        }
-        nyelvImage: file(relativePath: { eq: "nyelv.jpg" }) {
-          ...featureImage
-        }
-      }
-      fragment featureImage on File {
-        childImageSharp {
-          fluid(maxWidth: 950, quality: 60) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    `}
+    query={query}
     render={data => (
       <section className="feature margin-top-md">
         <div className="feature__container">
@@ -87,3 +65,27 @@ const Features = () => (
 )
 
 export default Features
+
+const query = graphql`
+  query featureQuery {
+    mozgasImage: file(relativePath: { eq: "mozgas.jpg" }) {
+      ...featureImage
+    }
+    harcImage: file(relativePath: { eq: "harc.jpg" }) {
+      ...featureImage
+    }
+    zeneImage: file(relativePath: { eq: "zene.jpg" }) {
+      ...featureImage
+    }
+    nyelvImage: file(relativePath: { eq: "nyelv.jpg" }) {
+      ...featureImage
+    }
+  }
+  fragment featureImage on File {
+    childImageSharp {
+      fluid(maxWidth: 950, quality: 60) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`

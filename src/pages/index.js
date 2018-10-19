@@ -3,8 +3,8 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Fade from 'react-reveal/Fade'
 
-import Features from '../components/Home/Features'
-import Shortcuts from '../components/Home/Shortcuts'
+import Features from '../components/Feature/Features'
+import Shortcuts from '../components/Shortcut/Shortcuts'
 import Icon from '../components/Icon'
 import Button from '../components/Button'
 

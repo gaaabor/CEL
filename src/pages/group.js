@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Teachers from '../components/Group/Teachers'
+import Teachers from '../components/Teacher/Teachers'
 
 const groupPage = ({ data }) => (
   <Fragment>

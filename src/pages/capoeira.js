@@ -13,6 +13,7 @@ const capoeiraPage = ({ data }) => (
           allow="autoplay; encrypted-media"
           allowfullscreen
         />
+        <h1 className="heading-1">About {data.site.siteMetadata.title}</h1>
       </div>
     </div>
   </Fragment>
@@ -27,6 +28,11 @@ export const capoeiraQuery = graphql`
         fluid(maxWidth: 1900, quality: 65) {
           ...GatsbyImageSharpFluid
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
