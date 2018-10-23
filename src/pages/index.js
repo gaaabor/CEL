@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Fade from 'react-reveal/Fade'
+import Scrollchor from 'react-scrollchor'
 
 import Features from '../components/Feature/Features'
 import Shortcuts from '../components/Shortcut/Shortcuts'
@@ -17,9 +18,9 @@ const IndexPage = ({ data }) => (
       />
       <h1 className="hero__heading">Hero Content</h1>
       <div className="arrow__box">
-        <a className="scroll" href="#introduction">
+        <Scrollchor to="#introduction" className="nav-link">
           <Icon block="arrow" name="arrow-down" />
-        </a>
+        </Scrollchor>
       </div>
     </header>
 

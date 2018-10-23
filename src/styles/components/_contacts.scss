@@ -52,5 +52,80 @@ input[type='checkbox'] {
 }
 
 .collapsible-content .content-inner {
+  border: $border;
   padding-top: 2rem;
+}
+
+.contact {
+  h1 {
+    text-align: center;
+  }
+  &__container {
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'magrao prof sapi';
+    justify-items: center;
+    @media only screen and (max-width: $bp-phone-lg) {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-areas: 'prof prof prof prof prof' '. sapi . magrao .';
+      grid-gap: 3rem;
+    }
+    @media only screen and (max-width: $bp-phone-sm) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: '. prof .' '. magrao .' '. sapi .';
+      grid-gap: 3rem;
+    }
+  }
+  &__box {
+    &--prof {
+      grid-area: prof;
+    }
+    &--magrao {
+      grid-area: magrao;
+    }
+    &--sapi {
+      grid-area: sapi;
+    }
+  }
+  &__name {
+    margin-bottom: 1rem;
+    &--full {
+      font-size: 2.3rem;
+      letter-spacing: 1.5px;
+    }
+    &--apelido {
+      font-size: 1.8rem;
+      font-style: italic;
+      color: $color-primary;
+    }
+  }
+  &__details {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &-text {
+      margin-left: 1rem;
+    }
+  }
+  &__email {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  &__phone {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: $color-primary;
+  }
 }

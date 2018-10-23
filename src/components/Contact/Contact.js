@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Icon from './Icon'
+import Icon from '../Icon'
 
 const Contact = props => (
   <div className={`contact__box contact__box--${props.person}`}>
