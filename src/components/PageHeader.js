@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 const PageHeader = props => (
   <Fragment>
-    <Img fluid={props.fluid} className="header__image" />
+    <Img fluid={props.fluid} className={`${props.page}__header`} />
   </Fragment>
 )
 
@@ -12,4 +12,5 @@ export default PageHeader
 
 PageHeader.propTypes = {
   fluid: PropTypes.string,
+  page: PropTypes.string,
 }

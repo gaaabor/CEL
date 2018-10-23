@@ -1,18 +1,18 @@
 .footer {
   min-height: 50vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #333;
   &__main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    @include respond(tab-sm) {
-      grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__sitemap {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
     &-link:link,
     &-link:visited {
       color: $color-white;
@@ -21,6 +21,22 @@
       text-decoration: none;
       text-transform: uppercase;
       padding: 1rem;
+    }
+    &-link:hover {
+      color: $color-primary;
+    }
+  }
+  &__social {
+    &-text {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      font-family: $font-para;
+    }
+    &-box {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
     }
   }
   &__bottom {
@@ -34,5 +50,14 @@
       color: $color-primary;
       cursor: pointer;
     }
+  }
+  &__icon {
+    position: absolute;
+    right: 4rem;
+    bottom: 6rem;
+    fill: $color-primary;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
   }
 }

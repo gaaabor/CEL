@@ -1,3 +1,10 @@
+.group {
+  &__header {
+    height: 65vh;
+    background-position: bottom;
+  }
+}
+
 .kezdetek {
   padding: 3rem 0 5rem 0;
   @include centerTextContainer;

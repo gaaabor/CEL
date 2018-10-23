@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
+import Fade from 'react-reveal/Fade'
 
 import PageHeader from '../components/PageHeader'
 import Teachers from '../components/Teacher/Teachers'
@@ -7,7 +8,10 @@ import Teachers from '../components/Teacher/Teachers'
 const groupPage = ({ data }) => (
   <Fragment>
     <header>
-      <PageHeader fluid={data.csoportImage.childImageSharp.fluid} />
+      <PageHeader
+        fluid={data.csoportImage.childImageSharp.fluid}
+        page="group"
+      />
     </header>
     <main>
       <section className="kezdetek margin-top-sm margin-bottom-sm">
@@ -21,7 +25,7 @@ const groupPage = ({ data }) => (
           <br />
           <br />
           <br />
-          >Célunk az élethosszig tartó rendszeres testmozgás iránti igény
+          Célunk az élethosszig tartó rendszeres testmozgás iránti igény
           kialakítása és kielégítése, az életminőség nagy mértékű és tartós
           javítása, egy nyitott, barátságos, elfogadó és támogató közösség
           megteremtése.
@@ -48,3 +52,9 @@ export const groupQuery = graphql`
     }
   }
 `
+
+Fade.defaultProps = {
+  bottom: true,
+  fraction: 0.5,
+  duration: 400,
+}

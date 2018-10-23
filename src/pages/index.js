@@ -15,10 +15,13 @@ const IndexPage = ({ data }) => (
       <Img
         fluid={data.heroImage.childImageSharp.fluid}
         className="hero__image"
+        alt="Kezdőkép"
       />
-      <h1 className="hero__heading">Hero Content</h1>
+      <Fade>
+        <h1 className="hero__heading">Hero Content</h1>
+      </Fade>
       <div className="arrow__box">
-        <Anchor to="introduction" spy={true} smooth={true} duration={500}>
+        <Anchor to="introduction" spy={true} smooth={true} duration={700}>
           <Icon block="arrow" name="arrow-down" />
         </Anchor>
       </div>

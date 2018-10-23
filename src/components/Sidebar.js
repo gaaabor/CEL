@@ -120,6 +120,7 @@ class Sidebar extends React.Component {
               href="https://www.youtube.com/channel/UCgbYtjFmdAffgUoptWjYf-w"
               target="_blank"
               className="social__link"
+              rel="noopener noreferrer"
             >
               <Icon block="social" name="youtube" />
             </a>
@@ -127,6 +128,7 @@ class Sidebar extends React.Component {
               href="https://www.instagram.com/capoeira_espirito_livre_cel/"
               target="_blank"
               className="social__link"
+              rel="noopener noreferrer"
             >
               <Icon block="social" name="instagram" />
             </a>
@@ -134,6 +136,7 @@ class Sidebar extends React.Component {
               href="https://www.facebook.com/cel.capoeira/"
               target="_blank"
               className="social__link"
+              rel="noopener noreferrer"
             >
               <Icon block="social" name="facebook" />
             </a>
