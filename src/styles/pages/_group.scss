@@ -1,14 +1,20 @@
 .group {
-  &__header {
-    height: 65vh;
-    background-position: bottom;
-  }
+   &__header {
+      height: 65vh;
+      background-position: bottom;
+   }
 }
 
 .kezdetek {
-  padding: 3rem 0 5rem 0;
-  @include centerTextContainer;
-  &__text {
-    @include paragraphText;
-  }
+   padding: 3rem 0 0rem 0;
+   @include centerTextContainer;
+   &__text {
+      @include paragraphText;
+   }
+}
+
+.teachers {
+   &__heading {
+      text-align: center;
+   }
 }

@@ -15,24 +15,34 @@ const groupPage = ({ data }) => (
     </header>
     <main>
       <section className="kezdetek margin-top-sm margin-bottom-sm">
-        <h1 className="heading-1 margin-top-sm margin-bottom-sm">A kezdetek</h1>
+        <Fade>
+          <h1 className="heading-1 margin-top-sm margin-bottom-sm">
+            A kezdetek
+          </h1>
+        </Fade>
 
-        <p className="kezdetek__text margin-bottom-md">
-          Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
-          Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
-          hatékonyabb átadása mellett nagy hangsúlyt fektetnek a megfelelő
-          testi, lelki és szellemi egészség kialakítására, és megőrzésére.
-          <br />
-          <br />
-          <br />
-          Célunk az élethosszig tartó rendszeres testmozgás iránti igény
-          kialakítása és kielégítése, az életminőség nagy mértékű és tartós
-          javítása, egy nyitott, barátságos, elfogadó és támogató közösség
-          megteremtése.
-        </p>
+        <Fade>
+          <p className="kezdetek__text margin-bottom-md">
+            Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
+            Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
+            hatékonyabb átadása mellett nagy hangsúlyt fektetnek a megfelelő
+            testi, lelki és szellemi egészség kialakítására, és megőrzésére.
+            <br />
+            <br />
+            <br />
+            Célunk az élethosszig tartó rendszeres testmozgás iránti igény
+            kialakítása és kielégítése, az életminőség nagy mértékű és tartós
+            javítása, egy nyitott, barátságos, elfogadó és támogató közösség
+            megteremtése.
+          </p>
+        </Fade>
       </section>
       <section className="teachers">
-        <h1 className="heading-1 margin-top-sm margin-bottom-sm">TANÁRAINK</h1>
+        <Fade>
+          <h1 className="heading-1 teachers__heading margin-bottom-md">
+            TANÁRAINK
+          </h1>
+        </Fade>
         <Teachers />
       </section>
     </main>
