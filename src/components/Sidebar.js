@@ -102,17 +102,6 @@ class Sidebar extends React.Component {
                 <Icon block="side-nav" name="sea-waves" />
               </Link>
             </li>
-
-            <li className="side-nav__item">
-              <Link
-                className="side-nav__link"
-                to="/camp"
-                onClick={() => this.closeMenu()}
-              >
-                <span>Elérhetőségek</span>
-                <Icon block="side-nav" name="phone" />
-              </Link>
-            </li>
           </ul>
 
           <div className="social__box">
