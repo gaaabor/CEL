@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
         onStateChange={state => this.handleStateChange(state)}
         pageWrapId={'page-wrap'}
         outerContainerId={'App'}
-        customBurgerIcon={<img src={menu} />}
+        customBurgerIcon={<img src={menu} alt="logo" />}
       >
         <div className="side-nav__container">
           <div className="side-nav__logo-box">

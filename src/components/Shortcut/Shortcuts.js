@@ -46,26 +46,3 @@ const Shortcuts = () => (
 )
 
 export default Shortcuts
-
-{
-  /* <Shortcut
-          name="csoport"
-          title="csoport"
-          fluid={data.csoportImage.childImageSharp.fluid}
-          text="Csoportunkat Professor Cabeludo (Oláh Krisztián) és Instrutor Magrão
-        (Balogh Tamás) alapította 2016-ban."
-          btnLink="/group"
-          btnText="Nézz be hozzánk"
-          iconName="group"
-        />
-        <Shortcut
-          name="tabor"
-          title="tabor"
-          fluid={data.taborImage.childImageSharp.fluid}
-          text="Egy kihagyhatatlan lehetőség, hogy a capoeira-val intenzíven foglalkozzunk és persze életreszóló élményekkel térjünk
-            haza!"
-          btnLink="/tabor"
-          btnText="Éld át te is"
-          iconName="sea-waves"
-        /> */
-}

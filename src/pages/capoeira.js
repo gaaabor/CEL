@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
 const capoeiraPage = ({ data }) => (
@@ -11,6 +10,7 @@ const capoeiraPage = ({ data }) => (
           src="https://www.youtube.com/embed/HgFEUPgpwc4?rel=0&amp;showinfo=0"
           frameborder="0"
           allow="autoplay; encrypted-media"
+          title="Capoeira video"
           allowfullscreen
         />
         <h1 className="heading-1">About {data.site.siteMetadata.title}</h1>

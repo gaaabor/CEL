@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import '../styles/main.scss'
 
 const Layout = ({ children, location }) => (
-  <div id="app">
+  <div id="App">
     <Sidebar />
     <div id="page-wrap">
       <Transition location={location}>

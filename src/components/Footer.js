@@ -63,7 +63,10 @@ const Footer = () => (
     <div className="footer__bottom">
       <p>2018 | Capoeira Espirito Livre</p>
       <p>
-        Built by: <a href="#">Gabor Bencsik</a>
+        Built by:{' '}
+        <a href="https://gaborbencsik.me" rel="noopener noreferrer">
+          Gabor Bencsik
+        </a>
       </p>
     </div>
   </footer>
