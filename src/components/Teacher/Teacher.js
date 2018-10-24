@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import Fade from 'react-reveal/Fade'
 
@@ -25,4 +26,12 @@ Fade.defaultProps = {
   bottom: true,
   fraction: 0.5,
   duration: 400,
+}
+
+Teacher.propTypes = {
+  item: PropTypes.string,
+  fluid: PropTypes.string,
+  apelido: PropTypes.string,
+  name: PropTypes.string,
+  text: PropTypes.string,
 }

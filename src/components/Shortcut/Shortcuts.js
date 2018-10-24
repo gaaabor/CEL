@@ -5,23 +5,7 @@ import Shortcut from './Shortcut'
 
 const Shortcuts = () => (
   <StaticQuery
-    query={graphql`
-      query shortcutQuery {
-        csoportImage: file(relativePath: { eq: "csoport.jpg" }) {
-          ...shortcutImage
-        }
-        taborImage: file(relativePath: { eq: "tabor.jpg" }) {
-          ...shortcutImage
-        }
-      }
-      fragment shortcutImage on File {
-        childImageSharp {
-          fluid(maxWidth: 1900, quality: 70) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    `}
+    query={query}
     render={data => (
       <section className="shortcut margin-bottom-lg">
         <Shortcut
@@ -46,3 +30,21 @@ const Shortcuts = () => (
 )
 
 export default Shortcuts
+
+const query = graphql`
+  query shortcutQuery {
+    csoportImage: file(relativePath: { eq: "csoport.jpg" }) {
+      ...shortcutImage
+    }
+    taborImage: file(relativePath: { eq: "tabor.jpg" }) {
+      ...shortcutImage
+    }
+  }
+  fragment shortcutImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1900, quality: 70) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`

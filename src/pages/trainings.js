@@ -2,7 +2,7 @@ import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import Fade from 'react-reveal/Fade'
 
-import Card from '../components/Trainings/Card'
+import Card from '../components/Card'
 
 const trainingsPage = () => (
   <main>

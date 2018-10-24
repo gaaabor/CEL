@@ -17,9 +17,9 @@ const Feature = props => (
 
 export default Feature
 
-// PropTypes
 Feature.propTypes = {
   name: PropTypes.string,
+  fluid: PropTypes.string,
   title: PropTypes.string,
   text: PropTypes.string,
 }

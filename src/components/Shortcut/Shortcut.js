@@ -29,6 +29,7 @@ const Shortcut = props => (
 export default Shortcut
 
 Shortcut.propTypes = {
+  fluid: PropTypes.string,
   text: PropTypes.string,
   btnLink: PropTypes.string,
   btnText: PropTypes.string,

@@ -5,26 +5,7 @@ import Teacher from './Teacher'
 
 const Teachers = () => (
   <StaticQuery
-    query={graphql`
-      query teacherQuery {
-        magraoImage: file(relativePath: { eq: "magrao.jpg" }) {
-          ...teacherImage
-        }
-        profImage: file(relativePath: { eq: "prof.jpg" }) {
-          ...teacherImage
-        }
-        sapiImage: file(relativePath: { eq: "sapi.jpg" }) {
-          ...teacherImage
-        }
-      }
-      fragment teacherImage on File {
-        childImageSharp {
-          fluid(maxWidth: 640, quality: 60) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    `}
+    query={query}
     render={data => (
       <section className="teacher">
         <Teacher
@@ -57,3 +38,24 @@ const Teachers = () => (
 )
 
 export default Teachers
+
+const query = graphql`
+  query teacherQuery {
+    magraoImage: file(relativePath: { eq: "magrao.jpg" }) {
+      ...teacherImage
+    }
+    profImage: file(relativePath: { eq: "prof.jpg" }) {
+      ...teacherImage
+    }
+    sapiImage: file(relativePath: { eq: "sapi.jpg" }) {
+      ...teacherImage
+    }
+  }
+  fragment teacherImage on File {
+    childImageSharp {
+      fluid(maxWidth: 640, quality: 60) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
