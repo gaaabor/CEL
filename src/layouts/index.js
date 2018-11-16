@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Transition from '../components/Transition'
 
 import Sidebar from '../components/Sidebar'
