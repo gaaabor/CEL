@@ -15,38 +15,40 @@ const Features = () => (
             name="mozgas"
             fluid={data.mozgasImage.childImageSharp.fluid}
             title="Mozgás"
-            text="A capoeira rendkívül változatos, szinte minden alapvető emberi
-                mozgásformát ötvöz, az alapvető elemektől (fejenállás,
-                kézállás...) az egészen látványos akrobatikus mozdulatokig
-                (kézenátfordulások, szaltók...)
-                Különösen jó hatással van az alapvető kondicionális (erő,
-                gyorsaság, állóképesség) és koordinációs képességekre, valamint
-                a hajlékonyságra, a testi (és szellemi) rugalmasságra."
+            text="A capoeira mozgásvilága különösen változatos. Szinte minden alapvető emberi
+mozgásmintát tartalmaz a viszonylag könnyebbektől (guggolás, kúszás, fejenállás, kézállás...)
+az egészen látványosakig (kézen átfordulás, szaltó...) Különösen jó hatással van az alapvető
+kondicionális (erő, gyorsaság, állóképesség) és koordinációs képességekre, valamint a
+hajlékonyságra, a testi (és szellemi) rugalmasságra."
           />
           <Feature
             name="harc"
             fluid={data.harcImage.childImageSharp.fluid}
-            title="Harc"
-            text="A capoeira - a közhiedelemmel ellentétben - egy harcművészet, így minden, amit az edzéseken hallunk és tanulunk
-            a segítségünkre lehet abban, hogy bármikor, bármilyen körülmények között képesek legyünk megvédeni magunkat.
-            Tanítványainknak időről időre lehetőségük nyílik összemérni tudásukat egy játékos küzdelem formájában, a capoeira
-            “arénájában”, a roda-ban."
+            title="Küzdelem"
+            text="A capoeira - a közhiedelemmel ellentétben - egy harcművészet, így minden, amit az
+edzéseken látunk, hallunk és tanulunk, a segítségünkre lehet abban, hogy bármikor, bármilyen
+körülmények között képesek legyünk megvédeni magunkat. Tanítványainknak újra és újra
+lehetőségük nyílik összemérni tudásukat egy játékos küzdelem formájában, a capoeira
+“arénájában”, a roda-ban."
           />
           <Feature
             name="zene"
             fluid={data.zeneImage.childImageSharp.fluid}
             title="Zene"
-            text="Az éneklés és a zene a capoeira nélkülözhetetlen része. Ez az ami a capoeira-t egyértelműen megkülönbözteti minden
-            más harcművészettől. Fontosnak tartjuk hogy edzéseinken a mozdulatok elsajátítása mellett, minden tanulónk megismerkedjen
-            a capoeira dalaival, hangszereivel."
+            text="A zene és az énekszó a capoeira nélkülözhetetlen része. Ez az ami a capoeira-t egyértelműen
+megkülönbözteti minden más harcművészettől. Foglalkozásainkon kiemelt figyelmet
+szentelünk annak, hogy a tanulók kapcsolatba kerülhessenek a capoeira zenei világával is,
+megismerhessék saját adottságaikat, és elsajátíthassák a hangszerek kezelésének különböző
+módozatait."
           />
           <Feature
             name="nyelv"
             fluid={data.nyelvImage.childImageSharp.fluid}
             title="NYELV ÉS KULTÚRA"
-            text="Ezen tényezők (mozgás, küzdelem, zene, dalok) összessége pedig lehetővé teszi, hogy megismerj az európaitól egy
-            merőben eltérő kultúrát és gondolkodásmódot, továbbá, hogy közelebbi kapcsolatba kerülj a capoeira “anyanyelvével”,
-            a (brazil) portugállal."
+            text="Ezen tényezők (mozgás, küzdelem, zene, dalok) összessége pedig lehetővé teszi, hogy az
+érdeklődők személyes benyomásokat szerezhessenek egy, az európaitól egy merőben eltérő
+kultúráról és gondolkodásmódról, továbbá, hogy megtehessék első lépéseiket egy izgalmas
+idegen nyelv, a (brazil) portugál elsajátítása felé."
           />
         </div>
         <div className="feature__cta-container">

@@ -104,12 +104,19 @@ const trainingsPage = () => (
     </section>
     <Fade bottom={true} fraction={0.5} duration={400}>
       <section className="equipment">
-        <h1 className="heading-1 margin-bottom-sm">Mire van szükséged</h1>
+        <h1 className="heading-1 margin-bottom-sm">Mit hozz magaddal?</h1>
         <p className="equipment__text">
-          Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra,
-          sapien fo dang hendrerizzle, libero urna hendrerit leo, nizzle
-          condimentum get down get down sapien at nunc. Donec eu fizzle.
-          Vestibulum quis away.
+          Ahhoz, hogy bármikor csatlakozhass foglalkozásainkhoz csupán egy
+          kényelmes pólóra, és egy rövid vagy hosszú nadrágra lesz szükséged,
+          amiben jól érzed magad, és könnyedén tudsz mozogni! Edzéseinken
+          többnyire mezítláb vagyunk, így edzőcipőt nem kell hoznod magaddal.
+          <br />A folyadékveszteség pótlására érdemes valamilyen – legalább fél
+          liter – innivalóról is gondoskodnod!
+          <br />
+          <br />
+          Később – amennyiben folytatod az edzéseket – az oktatóktól majd
+          beszerezheted saját – a csoport címerével ellátott – edző pólódat és
+          nadrágodat is!
         </p>
       </section>
     </Fade>

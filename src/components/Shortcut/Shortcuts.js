@@ -18,8 +18,8 @@ const Shortcuts = () => (
         />
         <Shortcut
           fluid={data.taborImage.childImageSharp.fluid}
-          text="Egy kihagyhatatlan lehetőség, hogy a capoeira-val intenzíven foglalkozzunk és persze életreszóló élményekkel térjünk
-            haza!"
+          text="Egy kihagyhatatlan lehetőség, hogy elmélyedj a capoeira-ban, és életre szóló
+élményeket szerezz!"
           btnLink="/tabor"
           btnText="Éld át te is"
           iconName="sea-waves"

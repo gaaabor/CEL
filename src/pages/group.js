@@ -23,17 +23,19 @@ const groupPage = ({ data }) => (
 
         <Fade>
           <p className="kezdetek__text margin-bottom-md">
-            Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
-            Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
-            hatékonyabb átadása mellett nagy hangsúlyt fektetnek a megfelelő
-            testi, lelki és szellemi egészség kialakítására, és megőrzésére.
+            Csoportunk, a Capoeira Espírito Livre (Capoeira Szabad Szellem)
+            2016-ban azzal a céllal alakult, hogy magas színvonalú, minőségi
+            oktatást biztosítson a capoeira iránt érdeklődők számára. <br />
+            Azóta is számos helyszínen, heti több alkalommal zajlanak edzéseink,
+            melyekre sok szeretettel várunk mindenkit, aki kortól, nemtől,
+            vallási felekezettől függetlenül!
             <br />
             <br />
-            <br />
-            Célunk az élethosszig tartó rendszeres testmozgás iránti igény
-            kialakítása és kielégítése, az életminőség nagy mértékű és tartós
-            javítása, egy nyitott, barátságos, elfogadó és támogató közösség
-            megteremtése.
+            Amennyiben úgy érzed, valamely kérdésedre nem kaptál választ az
+            oldalon, keress minket bátran az <a>info@cel-capoeira.com</a> e-mail
+            címen. Ha szeretnél bepillantást nyeri csoportunk életébe, látogass
+            el <a>Facebook</a> oldalunkra, vagy nézelődj <a>Youtube</a>{' '}
+            csatornánkon!”
           </p>
         </Fade>
       </section>

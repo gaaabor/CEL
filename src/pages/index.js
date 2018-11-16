@@ -37,17 +37,17 @@ const IndexPage = ({ data }) => (
 
         <Fade>
           <p className="introduction__text margin-bottom-md">
-            Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
-            Tapasztalt, szakképzett oktatóink a capoeira alapjainak minél
-            hatékonyabb átadása mellett nagy hangsúlyt fektetnek a megfelelő
-            testi, lelki és szellemi egészség kialakítására, és megőrzésére.
+            „Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
+            Tapasztalt, szakképzett oktatóink a capoeira mozgásvilágának
+            megalapozása mellett nagy hangsúlyt fektetnek a megfelelő testi,
+            lelki és szellemi egészség kialakítására, és megőrzésére.
             <br />
             <br />
             <br />
-            Célunk az élethosszig tartó rendszeres testmozgás iránti igény
-            kialakítása és kielégítése, az életminőség nagy mértékű és tartós
-            javítása, egy nyitott, barátságos, elfogadó és támogató közösség
-            megteremtése.
+            Célunk – a capoeira kultúrájának minél alaposabb átadásán túl – az
+            élethosszig tartó rendszeres testmozgás iránti igény kialakítása és
+            kielégítése, az életminőség nagyfokú és tartós javítása, egy
+            nyitott, barátságos, elfogadó és támogató közösség megteremtése.
           </p>
         </Fade>
 

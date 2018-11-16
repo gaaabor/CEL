@@ -18,7 +18,7 @@ const Contacts = () => (
               apelido="Professor Cabeludo"
               email="cel.cabeludo@gmail.com"
               phone="+36 20 497 24 97"
-              location="Budapest | Dunakeszi | Veresegyház"
+              location="Újpalota | Dunakeszi | Veresegyház"
             />
             <Contact
               person="magrao"
@@ -34,7 +34,7 @@ const Contacts = () => (
               apelido="Instrutor Sapinho"
               email="cel.sapinho@gmail.com"
               phone="+36 30 951 76 38"
-              location="Pesthidegkút"
+              location="Gyömrő | Pesthidegkút"
             />
           </div>
         </div>
