@@ -19,7 +19,7 @@ export default Feature
 
 Feature.propTypes = {
   name: PropTypes.string,
-  fluid: PropTypes.string,
+  fluid: PropTypes.object,
   title: PropTypes.string,
   text: PropTypes.string,
 }

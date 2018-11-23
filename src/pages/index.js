@@ -17,9 +17,11 @@ const IndexPage = ({ data }) => (
         className="hero__image"
         alt="Kezdőkép"
       />
-      <Fade>
-        <h1 className="hero__heading">Hero Content</h1>
-      </Fade>
+      <Img
+        fluid={data.logoImage.childImageSharp.fluid}
+        className="hero__logo"
+        alt="Logo"
+      />
       <div className="arrow__box">
         <Anchor to="introduction" spy={true} smooth={true} duration={700}>
           <Icon block="arrow" name="arrow-down" />
@@ -71,9 +73,16 @@ export default IndexPage
 
 export const homeQuery = graphql`
   query {
-    heroImage: file(relativePath: { eq: "hero.jpg" }) {
+    heroImage: file(relativePath: { eq: "hero.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1900, quality: 65) {
+        fluid(maxWidth: 1900, quality: 70) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logoImage: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 650, quality: 65) {
           ...GatsbyImageSharpFluid
         }
       }

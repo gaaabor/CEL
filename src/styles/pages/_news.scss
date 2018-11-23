@@ -1,0 +1,21 @@
+.news__title {
+   text-align: center;
+   margin-top: 3rem;
+}
+
+.j-stacker-wrapper {
+   margin: 0 2rem !important;
+}
+
+.j-message p {
+   color: $color-white;
+}
+
+.juicer-button {
+   border: 2px solid $color-primary !important;
+}
+
+.juicer-button:hover {
+   background: $color-primary !important;
+   color: $color-white !important;
+}
