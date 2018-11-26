@@ -16,6 +16,9 @@ const Footer = () => (
         <Link to="/" className="footer__sitemap-link">
           Kezdőlap
         </Link>
+        <Link to="/news" className="footer__sitemap-link">
+          Hírek
+        </Link>
         <Link to="/capoeira" className="footer__sitemap-link">
           Capoeira
         </Link>

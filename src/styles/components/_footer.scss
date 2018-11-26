@@ -11,22 +11,31 @@
       align-items: center;
    }
    &__sitemap {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      @include respond(phone-lg) {
+         grid-template-columns: repeat(3, 1fr);
+         padding: 1rem;
+      }
       font-size: 3rem;
       margin-bottom: 2rem;
       &-link:link,
       &-link:visited {
+         min-width: 88px;
          color: $color-white;
          font-family: $font-heading;
          font-weight: 300;
          text-decoration: none;
          text-transform: uppercase;
          padding: 1rem;
+         text-align: center;
       }
       &-link:hover {
          color: $color-primary;
       }
    }
    &__social {
+      padding-bottom: 2rem;
       &-text {
          letter-spacing: 4px;
          text-transform: uppercase;

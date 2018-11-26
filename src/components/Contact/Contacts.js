@@ -21,14 +21,6 @@ const Contacts = () => (
               location="Újpalota | Dunakeszi | Veresegyház"
             />
             <Contact
-              person="magrao"
-              name="Balogh Tamás"
-              apelido="Instrutor Magrao"
-              email="cel.magrao@gmail.com"
-              phone="+36 20 978 28 64"
-              location="Gyömrő"
-            />
-            <Contact
               person="sapi"
               name="Soós Levente"
               apelido="Instrutor Sapinho"

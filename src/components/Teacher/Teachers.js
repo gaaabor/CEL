@@ -36,14 +36,6 @@ Az elkezdéséhez nincs szükség semmilyen előképzettségre. A foglalkozások
 figyelmet fordítunk a helyes mozgásminta kialakítására, és a test lépésről-lépésre való
 felkészítésére a bonyolultabb gyakorlatokhoz."
         />
-        <Teacher
-          item="magrao"
-          fluid={data.magraoImage.childImageSharp.fluid}
-          apelido="Instrutor Magrao"
-          name="Balogh Tamás"
-          text="Aliquam porta rizzle tellizzle. Mammasay mammasa mamma oo sa viverra, sapien fo dang hendrerizzle, libero urna hendrerit
-            leo, nizzle condimentum get down get down sapien at nunc. Donec eu fizzle. Vestibulum quis away."
-        />
       </section>
     )}
   />
@@ -53,9 +45,6 @@ export default Teachers
 
 const query = graphql`
   query teacherQuery {
-    magraoImage: file(relativePath: { eq: "magrao.jpg" }) {
-      ...teacherImage
-    }
     profImage: file(relativePath: { eq: "prof.jpg" }) {
       ...teacherImage
     }

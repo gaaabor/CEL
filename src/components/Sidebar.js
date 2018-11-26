@@ -73,22 +73,22 @@ class Sidebar extends React.Component {
             <li className="side-nav__item">
               <Link
                 className="side-nav__link"
-                to="/capoeira"
+                to="/trainings"
                 onClick={() => this.closeMenu()}
               >
-                <span>Capoeira</span>
-                <Icon block="side-nav" name="book" />
+                <span>Edzések</span>
+                <Icon block="side-nav" name="calendar" />
               </Link>
             </li>
 
             <li className="side-nav__item">
               <Link
                 className="side-nav__link"
-                to="/trainings"
+                to="/capoeira"
                 onClick={() => this.closeMenu()}
               >
-                <span>Edzések</span>
-                <Icon block="side-nav" name="calendar" />
+                <span>Capoeira</span>
+                <Icon block="side-nav" name="book" />
               </Link>
             </li>
 

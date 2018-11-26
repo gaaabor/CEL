@@ -63,29 +63,18 @@ input[type='checkbox'] {
   &__container {
     padding-bottom: 3rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'magrao prof sapi';
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    @media only screen and (max-width: $bp-phone-lg) {
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-areas: 'prof prof prof prof prof' '. sapi . magrao .';
-      grid-gap: 3rem;
-    }
-    @media only screen and (max-width: $bp-phone-sm) {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: '. prof .' '. magrao .' '. sapi .';
-      grid-gap: 3rem;
+    @include respond(phone-lg) {
+      grid-template-columns: 1fr;
     }
   }
   &__box {
+    min-width: 28rem;
     &--prof {
-      grid-area: prof;
-    }
-    &--magrao {
-      grid-area: magrao;
-    }
-    &--sapi {
-      grid-area: sapi;
+      @include respond(phone-lg) {
+        margin-bottom: 4rem;
+      }
     }
   }
   &__name {
