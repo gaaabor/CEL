@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => (
 
         <Fade>
           <p className="introduction__text margin-bottom-md">
-            „Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
+            Edzéseinken a capoeira minden “irányzatával” megismerkedhetsz.
             Tapasztalt, szakképzett oktatóink a capoeira mozgásvilágának
             megalapozása mellett nagy hangsúlyt fektetnek a megfelelő testi,
             lelki és szellemi egészség kialakítására, és megőrzésére.

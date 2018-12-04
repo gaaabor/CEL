@@ -11,7 +11,7 @@ const trainingsPage = () => (
       <Tabs>
         <div className="location-list">
           <TabList>
-            <Tab>Budapest</Tab>
+            <Tab>Újpalota</Tab>
             <Tab>Dunakeszi</Tab>
             <Tab>Veresegyház</Tab>
             <Tab>Gyömrő</Tab>
@@ -24,14 +24,14 @@ const trainingsPage = () => (
             <div className="card__container">
               <Card
                 dayOne="Kedd"
-                timeOne="18h15 - 19h45 (Közös)"
+                timeOne="18h15 - 19h45"
                 place="Kikötő Ifjúsági Közösségi Sziget"
                 locationLink="https://goo.gl/maps/SndJLbD8zqE2"
                 location="(1156 ÚJPALOTA, NYÍRPALOTA ÚT 40.)"
               />
               <Card
                 dayOne="Csütörtök"
-                timeOne="18h15 - 19h45 (Felnőtt)"
+                timeOne="19h00 - 20h30"
                 place="Újpalotai Szabadidő Közp. Köz. Háza"
                 locationLink="https://goo.gl/maps/a33jTCh3ny22"
                 location="(1157 ÚJPALOTA, ZSÓKAVÁR UTCA 15.)"
@@ -42,11 +42,11 @@ const trainingsPage = () => (
             <div className="card__container">
               <Card
                 dayOne="Hétfő"
-                timeOne="19h00 - 20h30 (Felnőtt)"
+                timeOne="19h00 - 20h30 (Haladó)"
                 dayTwo="Szerda"
-                timeTwo="18h30 - 20h00 (Gyerek)"
+                timeTwo="19h00 - 20h30"
                 dayThree="Péntek"
-                timeThree="18h30 - 20h00 (Közös)"
+                timeThree="19h00 - 20h30"
                 place="Szent István Általános Iskola"
                 locationLink="https://goo.gl/maps/wdc4WygWu7A2"
                 location="(2120 DUNAKESZI, REPÜLŐTÉRI UTCA 3.)"
@@ -57,14 +57,19 @@ const trainingsPage = () => (
             <div className="card__container">
               <Card
                 dayOne="Hétfő"
-                timeOne="16h30 - 18h00 (Közös)"
-                dayTwo="Szerda"
-                timeTwo="16h30 - 18h00 (Gyerek)"
-                dayThree="Péntek"
-                timeThree="16h30 - 18h00 (Közös)"
+                timeOne="16h30 - 18h00"
                 place="Sport Zone - Triangolo"
                 locationLink="https://goo.gl/maps/xu4eVngGFUv"
                 location="(2112 VERESEGYHÁZ, SZADAI ÚT 7.)"
+              />
+              <Card
+                dayOne="Szerda"
+                timeOne="16h30 - 18h00"
+                dayTwo="Péntek"
+                timeTwo="16h30 - 18h00 (Haladó)"
+                place="Fabriczius József Esti Gimnázium"
+                locationLink="https://goo.gl/maps/2oXK4EJ5zNP2"
+                location="(2112 VERESEGYHÁZ, FŐ ÚT 77.)"
               />
             </div>
           </TabPanel>
@@ -72,14 +77,14 @@ const trainingsPage = () => (
             <div className="card__container">
               <Card
                 dayOne="Péntek"
-                timeOne="17h45 - 19h15 (Közös)"
+                timeOne="17h45 - 19h15"
                 place="Weöres Sándor Általános Iskola"
                 locationLink="https://goo.gl/maps/vDcL9Z47fB62"
                 location="(2230 GYÖMRŐ, ERZSÉBET UTCA 18.)"
               />
               <Card
                 dayOne="Vasárnap"
-                timeOne="10h00 - 11h30 (Közös)"
+                timeOne="10h00 - 11h30"
                 place="Fekete István Általános Iskola"
                 locationLink="https://goo.gl/maps/W4nrn47cyxo"
                 location="(2230 GYÖMRŐ, KOSSUTH FERENC UTCA 5-7.)"
@@ -90,9 +95,9 @@ const trainingsPage = () => (
             <div className="card__container">
               <Card
                 dayOne="Hétfő"
-                timeOne="18h00 - 19h30 (Közös)"
+                timeOne="17h00 - 18h30"
                 dayTwo="Szerda"
-                timeTwo="18h00 - 19h30 (Közös)"
+                timeTwo="17h00 - 18h30"
                 place="Waldorf Iskola"
                 locationLink="https://goo.gl/maps/SVcbJ4QuzU92"
                 location="(1028 PESTHIDEGKÚT, KOSSUTH UTCA 15-17.)"

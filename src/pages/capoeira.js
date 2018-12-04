@@ -1,10 +1,23 @@
 import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 
+import PageHeader from '../components/PageHeader'
+
 const capoeiraPage = ({ data }) => (
   <Fragment>
-    <div className="page__container">
-      <div className="video">
+    <header>
+      <PageHeader
+        fluid={data.csoportImage.childImageSharp.fluid}
+        page="group"
+      />
+    </header>
+  </Fragment>
+)
+
+export default capoeiraPage
+
+{
+  /* <div className="video">
         <div className="iframe__container iframe-container-4x3">
           <iframe
             className="iframe"
@@ -15,15 +28,5 @@ const capoeiraPage = ({ data }) => (
             allowfullscreen
           />
         </div>
-      </div>
-      <h1
-        className="heading-1"
-        style={{ textAlign: 'center', paddingBottom: '10vh' }}
-      >
-        Az oldal feltöltés alatt, nézz vissza kesőbb
-      </h1>
-    </div>
-  </Fragment>
-)
-
-export default capoeiraPage
+      </div> */
+}

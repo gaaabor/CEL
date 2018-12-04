@@ -17,7 +17,12 @@ const Card = props => (
       <h3 className="card__lower">
         <Icon block="card" name="map-marker" />
         <p className="card__location">{props.place}</p>
-        <a href={props.locationLink} className="card__location-link">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href={props.locationLink}
+          className="card__location-link"
+        >
           {props.location}
         </a>
       </h3>
