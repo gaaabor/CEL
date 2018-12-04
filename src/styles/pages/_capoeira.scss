@@ -1,3 +1,11 @@
+.capoeira {
+  &__text {
+    padding: 3rem 0 0rem 0;
+    @include centerTextContainer;
+    @include paragraphText;
+  }
+}
+
 .video {
   margin-top: 4rem;
 }
