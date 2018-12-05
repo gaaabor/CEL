@@ -1,7 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-import Shortcut from './Shortcut'
+import Fade from 'react-reveal/Fade'
+
+import Button from './Button'
 
 const Shortcuts = () => (
   <StaticQuery
@@ -48,3 +51,29 @@ const query = graphql`
     }
   }
 `
+const Shortcut = props => (
+  <div className="shortcut__container">
+    <Img fluid={props.fluid} className="shortcut__pic" />
+    <div className="shortcut__overlay">
+      <div className="shortcut__text-box">
+        <Fade>
+          <p className="shortcut__text">{props.text}</p>
+        </Fade>
+        <Fade>
+          <Button
+            link={props.btnLink}
+            text={props.btnText}
+            color="ghost"
+            iconName={props.iconName}
+          />
+        </Fade>
+      </div>
+    </div>
+  </div>
+)
+
+Fade.defaultProps = {
+  bottom: true,
+  fraction: 0.5,
+  duration: 400,
+}

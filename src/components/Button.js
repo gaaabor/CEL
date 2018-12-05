@@ -1,8 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import Link from '../components/Link'
-
 import Icon from './Icon'
 
 const Button = props => (
@@ -13,10 +11,3 @@ const Button = props => (
 )
 
 export default Button
-
-Button.propTypes = {
-  link: PropTypes.string,
-  color: PropTypes.string,
-  text: PropTypes.string,
-  iconName: PropTypes.string,
-}

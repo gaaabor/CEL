@@ -4,21 +4,22 @@
     background: #4cbb17 url('../images/grass.png') !important;
   }
   &__text {
-    padding-top: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     @include centerTextContainer;
     font-family: $font-heading;
     h1 {
-      font-size: 8rem;
+      font-size: 6rem;
     }
     h2 {
-      font-size: 5rem;
+      font-size: 3rem;
     }
     a {
       color: $color-white;
     }
   }
   &__image {
-    width: 50rem;
+    width: 40rem;
     margin: 0 auto;
   }
 }

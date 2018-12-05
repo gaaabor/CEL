@@ -4,7 +4,7 @@ import { animateScroll as scroll } from 'react-scroll'
 
 import Icon from './Icon'
 import SocialIcon from './SocialIcon'
-import Contacts from '../components/Contact/Contacts'
+import Contacts from '../components/Contacts'
 
 const Footer = () => (
   <footer className="footer">
@@ -14,24 +14,12 @@ const Footer = () => (
     <Contacts />
     <div className="footer__main">
       <div className="footer__sitemap">
-        <Link to="/" className="footer__sitemap-link">
-          Kezdőlap
-        </Link>
-        <Link to="/news" className="footer__sitemap-link">
-          Hírek
-        </Link>
-        <Link to="/capoeira" className="footer__sitemap-link">
-          Capoeira
-        </Link>
-        <Link to="/trainings" className="footer__sitemap-link">
-          Edzések
-        </Link>
-        <Link to="/group" className="footer__sitemap-link">
-          Csoport
-        </Link>
-        <Link to="/camp" className="footer__sitemap-link">
-          Tábor
-        </Link>
+        <SitemapLink to="/" text="Kezdőlap" />
+        <SitemapLink to="/news" text="Hírek" />
+        <SitemapLink to="/capoeira" text="Capoeira" />
+        <SitemapLink to="/trainings" text="Edzések" />
+        <SitemapLink to="/group" text="Csoport" />
+        <SitemapLink to="/camp" text="Tábor" />
       </div>
       <div className="footer__social">
         <p className="footer__social-text">Kövess minket:</p>
@@ -69,3 +57,9 @@ const Footer = () => (
 )
 
 export default Footer
+
+const SitemapLink = props => (
+  <Link to={props.to} className="footer__sitemap-link">
+    {props.text}
+  </Link>
+)

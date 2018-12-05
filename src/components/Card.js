@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Icon from './Icon'
 import Fade from 'react-reveal/Fade'
 
@@ -31,15 +30,3 @@ const Card = props => (
 )
 
 export default Card
-
-Card.propTypes = {
-  dayOne: PropTypes.string,
-  timeOne: PropTypes.string,
-  dayTwo: PropTypes.string,
-  timeTwo: PropTypes.string,
-  dayThree: PropTypes.string,
-  timeThree: PropTypes.string,
-  place: PropTypes.string,
-  locationLink: PropTypes.string,
-  location: PropTypes.string,
-}

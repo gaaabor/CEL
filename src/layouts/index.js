@@ -12,11 +12,15 @@ const Layout = ({ children, location }) => (
     <Helmet
       title="Capoeira Espirito Livre"
       meta={[
-        { name: 'description', content: 'Sample' },
+        {
+          name: 'description',
+          content:
+            'Csoportunk, a Capoeira Espírito Livre (Capoeira Szabad Szellem) 2016-ban azzal a céllal alakult, hogy magas színvonalú, minőségi oktatást biztosítson a capoeira iránt érdeklődők számára.',
+        },
         {
           name: 'keywords',
           content:
-            'capoeira, sport, edzés, budapest, újpalota dunakeszi, veresegyház, gyömrő',
+            'capoeira, sport, edzés, budapest, újpalota, dunakeszi, veresegyház, gyömrő',
         },
       ]}
     >

@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import PropTypes from 'prop-types'
 
 import Fade from 'react-reveal/Fade'
 
@@ -105,10 +104,3 @@ const Feature = props => (
     </div>
   </div>
 )
-
-Feature.propTypes = {
-  name: PropTypes.string,
-  fluid: PropTypes.object,
-  title: PropTypes.string,
-  text: PropTypes.string,
-}

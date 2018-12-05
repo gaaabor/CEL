@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-
-import Teacher from './Teacher'
+import Img from 'gatsby-image'
+import Fade from 'react-reveal/Fade'
 
 const Teachers = () => (
   <StaticQuery
@@ -9,7 +9,6 @@ const Teachers = () => (
     render={data => (
       <section className="teacher">
         <Teacher
-          item="prof"
           fluid={data.profImage.childImageSharp.fluid}
           apelido="Professor Cabeludo"
           name="Oláh Krisztián"
@@ -23,7 +22,6 @@ elsődleges fontosságúnak tartom a megfelelő testtudat kialakítását, ami l
 megkönnyíti az összetettebb mozgásformák elsajátítását!"
         />
         <Teacher
-          item="sapi"
           fluid={data.sapiImage.childImageSharp.fluid}
           apelido="Instrutor Sapinho"
           name="Soós Levente"
@@ -60,3 +58,24 @@ const query = graphql`
     }
   }
 `
+
+const Teacher = props => (
+  <div className="teacher__item">
+    <Img fluid={props.fluid} className="teacher__pic" />
+    <div className="teacher__text-box">
+      <Fade>
+        <h1 className="heading-1">{props.apelido}</h1>
+        <h2 className="heading-2">{props.name}</h2>
+      </Fade>
+      <Fade>
+        <p className="teacher__text">{props.text}</p>
+      </Fade>
+    </div>
+  </div>
+)
+
+Fade.defaultProps = {
+  bottom: true,
+  fraction: 0.5,
+  duration: 400,
+}

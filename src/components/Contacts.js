@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import Icon from '../Icon'
+import Icon from './Icon'
 
 const Contacts = () => (
   <div className="contact">
@@ -60,12 +59,3 @@ const Contact = props => (
     </div>
   </div>
 )
-
-Contact.propTypes = {
-  person: PropTypes.string,
-  name: PropTypes.string,
-  apelido: PropTypes.string,
-  email: PropTypes.string,
-  phone: PropTypes.string,
-  location: PropTypes.string,
-}

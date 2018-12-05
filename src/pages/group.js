@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Fade from 'react-reveal/Fade'
 
 import PageHeader from '../components/PageHeader'
-import Teachers from '../components/Teacher/Teachers'
+import Teachers from '../components/Teachers'
 
 const groupPage = ({ data }) => (
   <Fragment>
@@ -32,9 +32,17 @@ const groupPage = ({ data }) => (
             <br />
             <br />
             Amennyiben úgy érzed, valamely kérdésedre nem kaptál választ az
-            oldalon, keress minket bátran az <a>info@cel-capoeira.com</a> e-mail
-            címen. Ha szeretnél bepillantást nyeri csoportunk életébe, látogass
-            el <a>Facebook</a> oldalunkra, vagy nézelődj <a>Youtube</a>{' '}
+            oldalon, keress minket bátran az{' '}
+            <a
+              href="mailto:someone@yoursite.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="kezdetek__link"
+            >
+              info@cel-capoeira.com
+            </a>{' '}
+            e-mail címen. Ha szeretnél bepillantást nyeri csoportunk életébe,
+            látogass el <a>Facebook</a> oldalunkra, vagy nézelődj <a>Youtube</a>{' '}
             csatornánkon!”
           </p>
         </Fade>

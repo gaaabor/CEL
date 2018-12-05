@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 import { Link as Anchor } from 'react-scroll'
 
 import Features from '../components/Features'
-import Shortcuts from '../components/Shortcut/Shortcuts'
+import Shortcuts from '../components/Shortcuts'
 import Icon from '../components/Icon'
 import Button from '../components/Button'
 

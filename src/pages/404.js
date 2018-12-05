@@ -1,9 +1,20 @@
 import React from 'react'
+import Button from '../components/Button'
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  <div
+    style={{
+      height: '70vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <h1 className="heading-1" style={{ marginBottom: '3rem' }}>
+      Az oldal nem létezik :(
+    </h1>
+    <Button link="/" text="VISSZA A KEZDŐLAPRA" color="green" iconName="home" />
   </div>
 )
 

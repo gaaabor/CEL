@@ -1,33 +1,28 @@
 .teacher {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   @media only screen and (max-width: $bp-tab-sm) {
-      grid-template-columns: 1fr;
-   }
-   &__item {
-      border-right: 0.2px solid $color-primary;
-      &--prof {
-         @media only screen and (max-width: $bp-tab-sm) {
-            order: -1;
-         }
-      }
-      @media only screen and (max-width: $bp-tab-sm) {
-         border-right: none;
-      }
-   }
-   &__pic {
-      height: 60vh;
-   }
-   &__text-box {
-      padding: 5rem;
-   }
-   &__text {
-      font-family: $font-para;
-      font-size: 1.7rem;
-      font-weight: 300;
-      margin-top: 3rem;
-      @media only screen and (max-width: $bp-tab-lg) {
-         font-size: 1.8rem;
-      }
-   }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include respond(tab-sm) {
+    grid-template-columns: 1fr;
+  }
+  &__item:first-of-type {
+    border-right: 0.2px solid $color-primary;
+    @include respond(tab-sm) {
+      border-right: none;
+    }
+  }
+  &__pic {
+    height: 60vh;
+  }
+  &__text-box {
+    padding: 5rem;
+  }
+  &__text {
+    font-family: $font-para;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-top: 3rem;
+    @include respond(tab-lg) {
+      font-size: 1.8rem;
+    }
+  }
 }
