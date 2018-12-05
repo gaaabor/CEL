@@ -1,52 +1,52 @@
 .hero {
-   &__container {
-      position: relative;
-   }
-   &__image {
-      height: 90vh;
-   }
+  &__container {
+    position: relative;
+  }
+  &__image {
+    height: 90vh;
+  }
 }
 
 .hero__logo {
-   position: absolute !important;
-   top: 0;
-   left: 50rem;
-   z-index: 1000;
-   width: 45rem;
+  position: absolute !important;
+  top: 0;
+  left: 50rem;
+  z-index: 1000;
+  width: 45rem;
 }
 
 .arrow {
-   &__box {
-      width: 7rem;
-      height: 7rem;
-      background-color: none;
-      margin: 0 auto;
-      transform: translateY(-7rem);
-      box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
-      position: relative;
-      cursor: pointer;
-   }
-   &__icon {
-      fill: $color-primary;
-      position: absolute;
-      top: 1.5rem;
-      left: 1.65rem;
-      width: 4rem;
-      height: 4rem;
-      animation: bounce 2s infinite;
-   }
+  &__box {
+    width: 7rem;
+    height: 7rem;
+    background-color: none;
+    margin: 0 auto;
+    transform: translateY(-7rem);
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    position: relative;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: $color-primary;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.65rem;
+    width: 4rem;
+    height: 4rem;
+    animation: bounce 2s infinite;
+  }
 }
 
 .introduction {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding-bottom: 5rem;
-   @include centerTextContainer;
-   @include respond(tab-sm) {
-      padding-bottom: 0;
-   }
-   &__text {
-      @include paragraphText;
-   }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  @include centerTextContainer;
+  @include respond(tab-sm) {
+    padding-bottom: 0;
+  }
+  &__text {
+    @include paragraphText;
+  }
 }

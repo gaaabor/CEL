@@ -12,6 +12,9 @@ const capoeiraPage = ({ data }) => (
       />
     </header>
     <main className="margin-top-md">
+      <h1 className="capoeira__heading heading-1 margin-bottom-tiny">
+        Történelem
+      </h1>
       <p className="capoeira__text">
         A capoeira lenyűgöző mivolta abban rejlik, hogy egy élő és „lélegző”
         harcművészet, ami mind a mai napig folyamatosan változik, szüntelenül

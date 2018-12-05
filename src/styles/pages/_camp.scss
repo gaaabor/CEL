@@ -1,7 +1,24 @@
-.camp {
-   &__background {
-      height: 80vh;
-      background-color: #4cbb17 !important;
-      background-image: url('../../images/grass.png') !important;
-   }
+.tabor {
+  &__background {
+    min-height: 100vh;
+    background: #4cbb17 url('../images/grass.png') !important;
+  }
+  &__text {
+    padding-top: 10rem;
+    @include centerTextContainer;
+    font-family: $font-heading;
+    h1 {
+      font-size: 8rem;
+    }
+    h2 {
+      font-size: 5rem;
+    }
+    a {
+      color: $color-white;
+    }
+  }
+  &__image {
+    width: 50rem;
+    margin: 0 auto;
+  }
 }

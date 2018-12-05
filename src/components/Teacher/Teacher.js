@@ -5,9 +5,7 @@ import Fade from 'react-reveal/Fade'
 
 const Teacher = props => (
   <div className={`teacher__item teacher__item--${props.item}`}>
-    <div className="teacher__pic-box">
-      <Img fluid={props.fluid} className="teacher__pic" />
-    </div>
+    <Img fluid={props.fluid} className="teacher__pic" />
     <div className="teacher__text-box">
       <Fade>
         <h1 className="heading-1">{props.apelido}</h1>

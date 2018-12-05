@@ -1,45 +1,33 @@
 .teacher {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  @media only screen and (max-width: $bp-tab-sm) {
-    grid-template-columns: 1fr;
-  }
-  &__item {
-    border-right: 0.2px solid $color-primary;
-    &--prof {
-      @media only screen and (max-width: $bp-tab-sm) {
-        order: -1;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   @media only screen and (max-width: $bp-tab-sm) {
+      grid-template-columns: 1fr;
+   }
+   &__item {
+      border-right: 0.2px solid $color-primary;
+      &--prof {
+         @media only screen and (max-width: $bp-tab-sm) {
+            order: -1;
+         }
       }
-    }
-    @media only screen and (max-width: $bp-tab-sm) {
-      border-right: none;
-    }
-  }
-  &__pic-box {
-    overflow: hidden;
-    position: relative;
-  }
-  &__pic {
-    height: 60vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3s ease;
-    position: relative;
-    @media only screen and (max-width: $bp-laptop-sm) {
+      @media only screen and (max-width: $bp-tab-sm) {
+         border-right: none;
+      }
+   }
+   &__pic {
       height: 60vh;
-    }
-  }
-  &__text-box {
-    padding: 5rem;
-  }
-  &__text {
-    font-family: $font-para;
-    font-size: 1.7rem;
-    font-weight: 300;
-    margin-top: 3rem;
-    @media only screen and (max-width: $bp-tab-lg) {
-      font-size: 1.8rem;
-    }
-  }
+   }
+   &__text-box {
+      padding: 5rem;
+   }
+   &__text {
+      font-family: $font-para;
+      font-size: 1.7rem;
+      font-weight: 300;
+      margin-top: 3rem;
+      @media only screen and (max-width: $bp-tab-lg) {
+         font-size: 1.8rem;
+      }
+   }
 }

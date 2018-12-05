@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import Fade from 'react-reveal/Fade'
 import { Link as Anchor } from 'react-scroll'
 
-import Features from '../components/Feature/Features'
+import Features from '../components/Features'
 import Shortcuts from '../components/Shortcut/Shortcuts'
 import Icon from '../components/Icon'
 import Button from '../components/Button'
@@ -83,7 +83,7 @@ export const homeQuery = graphql`
     logoImage: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 650, quality: 65) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

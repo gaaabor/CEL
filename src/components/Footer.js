@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { animateScroll as scroll } from 'react-scroll'
 
 import Icon from './Icon'
+import SocialIcon from './SocialIcon'
 import Contacts from '../components/Contact/Contacts'
 
 const Footer = () => (
@@ -35,30 +36,18 @@ const Footer = () => (
       <div className="footer__social">
         <p className="footer__social-text">Kövess minket:</p>
         <div className="footer__social-box">
-          <a
+          <SocialIcon
             href="https://www.youtube.com/channel/UCgbYtjFmdAffgUoptWjYf-w"
-            target="_blank"
-            className="footer__social-item"
-            rel="noopener noreferrer"
-          >
-            <Icon block="social" name="youtube" />
-          </a>
-          <a
+            iconName="youtube"
+          />
+          <SocialIcon
             href="https://www.instagram.com/capoeira_espirito_livre_cel/"
-            target="_blank"
-            className="footer__social-item"
-            rel="noopener noreferrer"
-          >
-            <Icon block="social" name="instagram" />
-          </a>
-          <a
+            iconName="instagram"
+          />
+          <SocialIcon
             href="https://www.facebook.com/cel.capoeira/"
-            target="_blank"
-            className="footer__social-item"
-            rel="noopener noreferrer"
-          >
-            <Icon block="social" name="facebook" />
-          </a>
+            iconName="facebook"
+          />
         </div>
       </div>
     </div>
@@ -67,7 +56,11 @@ const Footer = () => (
       <p>2018 | Capoeira Espirito Livre</p>
       <p>
         Built by:{' '}
-        <a href="https://gaborbencsik.me" rel="noopener noreferrer">
+        <a
+          href="https://gaborbencsik.me"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Gabor Bencsik
         </a>
       </p>
