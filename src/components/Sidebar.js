@@ -50,11 +50,11 @@ class Sidebar extends React.Component {
 
           <ul className="side-nav__list">
             <NavItem to="/" text="Kezdőlap" iconName="home" />
-            <NavItem to="/news" text="Hírek" iconName="news" />
-            <NavItem to="/trainings" text="Edzések" iconName="calendar" />
+            <NavItem to="/hirek" text="Hírek" iconName="news" />
+            <NavItem to="/edzesek" text="Edzések" iconName="calendar" />
             <NavItem to="/capoeira" text="Capoeira" iconName="book" />
-            <NavItem to="/group" text="Csoport" iconName="group" />
-            <NavItem to="/camp" text="Tábor" iconName="sea-waves" />
+            <NavItem to="/csoport" text="Csoport" iconName="group" />
+            <NavItem to="/tabor" text="Tábor" iconName="sea-waves" />
           </ul>
 
           <div className="social__box">

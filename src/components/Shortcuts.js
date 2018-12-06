@@ -15,7 +15,7 @@ const Shortcuts = () => (
           fluid={data.csoportImage.childImageSharp.fluid}
           text="Csoportunkat Professor Cabeludo (Oláh Krisztián) és Instrutor Magrão
         (Balogh Tamás) alapította 2016-ban."
-          btnLink="/group"
+          btnLink="/csoport"
           btnText="Nézz be hozzánk"
           iconName="group"
         />

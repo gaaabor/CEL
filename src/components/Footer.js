@@ -15,11 +15,11 @@ const Footer = () => (
     <div className="footer__main">
       <div className="footer__sitemap">
         <SitemapLink to="/" text="Kezdőlap" />
-        <SitemapLink to="/news" text="Hírek" />
+        <SitemapLink to="/hirek" text="Hírek" />
         <SitemapLink to="/capoeira" text="Capoeira" />
-        <SitemapLink to="/trainings" text="Edzések" />
-        <SitemapLink to="/group" text="Csoport" />
-        <SitemapLink to="/camp" text="Tábor" />
+        <SitemapLink to="/edzesek" text="Edzések" />
+        <SitemapLink to="/csoport" text="Csoport" />
+        <SitemapLink to="/tabor" text="Tábor" />
       </div>
       <div className="footer__social">
         <p className="footer__social-text">Kövess minket:</p>

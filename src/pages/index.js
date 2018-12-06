@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => (
 
         <Fade>
           <Button
-            link="/trainings"
+            link="/edzesek"
             text="MIKOR ÉS HOL EDZÜNK"
             color="green"
             iconName="calendar"

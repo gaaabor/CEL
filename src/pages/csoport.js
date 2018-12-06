@@ -42,7 +42,24 @@ const groupPage = ({ data }) => (
               info@cel-capoeira.com
             </a>{' '}
             e-mail címen. Ha szeretnél bepillantást nyeri csoportunk életébe,
-            látogass el <a>Facebook</a> oldalunkra, vagy nézelődj <a>Youtube</a>{' '}
+            látogass el{' '}
+            <a
+              href="https://www.facebook.com/cel.capoeira/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="kezdetek__link"
+            >
+              Facebook
+            </a>{' '}
+            oldalunkra, vagy nézelődj{' '}
+            <a
+              href="https://www.youtube.com/channel/UCgbYtjFmdAffgUoptWjYf-w"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="kezdetek__link"
+            >
+              Youtube
+            </a>{' '}
             csatornánkon!”
           </p>
         </Fade>
