@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Capoeira Espirito Livre',
-    url: 'https://dazzling-noyce-8e96d1.netlify.com',
-    description: 'Some description',
+    siteUrl: `https://cel-capoeira.com`,
+    description:
+      'Csoportunk, a Capoeira Espírito Livre (Capoeira Szabad Szellem) 2016-ban azzal a céllal alakult, hogy magas színvonalú, minőségi oktatást biztosítson a capoeira iránt érdeklődők számára.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -42,6 +43,7 @@ module.exports = {
         exclude: ['/preview/**', '/do-not-track/me/too/'],
       },
     },
+    'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-layout',
