@@ -52,7 +52,7 @@ const query = graphql`
   }
   fragment teacherImage on File {
     childImageSharp {
-      fluid(maxWidth: 640, quality: 60) {
+      fluid(maxWidth: 640, quality: 100) {
         ...GatsbyImageSharpFluid
       }
     }

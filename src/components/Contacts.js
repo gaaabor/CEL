@@ -16,16 +16,16 @@ const Contacts = () => (
               person="prof"
               name="Oláh Krisztián"
               apelido="Professor Cabeludo"
-              email="cel.cabeludo@gmail.com"
-              phone="+36 20 497 24 97"
+              email="cel.capoeira@gmail.com"
+              phone="+36/30-618-8045"
               location="Újpalota | Dunakeszi | Veresegyház"
             />
             <Contact
               person="sapi"
               name="Soós Levente"
               apelido="Instrutor Sapinho"
-              email="cel.sapinho@gmail.com"
-              phone="+36 30 951 76 38"
+              email="sapinho.cel@gmail.com"
+              phone="+36/30-985-9909"
               location="Gyömrő | Pesthidegkút"
             />
           </div>
