@@ -29,6 +29,18 @@ class Sidebar extends React.Component {
   }
 
   render() {
+    const NavItem = props => (
+      <li className="side-nav__item">
+        <Link
+          className="side-nav__link"
+          to={props.to}
+          onClick={() => this.closeMenu()}
+        >
+          <span>{props.text}</span>
+          <Icon block="side-nav" name={props.iconName} />
+        </Link>
+      </li>
+    )
     return (
       <Menu
         isOpen={this.state.menuOpen}
@@ -76,18 +88,5 @@ class Sidebar extends React.Component {
     )
   }
 }
-
-const NavItem = props => (
-  <li className="side-nav__item">
-    <Link
-      className="side-nav__link"
-      to={props.to}
-      onClick={() => this.closeMenu()}
-    >
-      <span>{props.text}</span>
-      <Icon block="side-nav" name={props.iconName} />
-    </Link>
-  </li>
-)
 
 export default Sidebar

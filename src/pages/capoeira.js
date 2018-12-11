@@ -43,10 +43,10 @@ const capoeiraPage = ({ data }) => (
           <iframe
             className="iframe"
             src="https://www.youtube.com/embed/HgFEUPgpwc4?rel=0&amp;showinfo=0"
-            frameborder="0"
+            frameBorder="0"
             allow="autoplay; encrypted-media"
             title="Capoeira video"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
       </div>
