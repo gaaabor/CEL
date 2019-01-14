@@ -57,16 +57,11 @@ const trainingsPage = () => (
             <div className="card__container">
               <Card
                 dayOne="Hétfő"
-                timeOne="16h30 - 18h00"
-                place="Sport Zone - Triangolo"
-                locationLink="https://goo.gl/maps/xu4eVngGFUv"
-                location="(2112 VERESEGYHÁZ, SZADAI ÚT 7.)"
-              />
-              <Card
-                dayOne="Szerda"
-                timeOne="16h30 - 18h00"
-                dayTwo="Péntek"
-                timeTwo="16h30 - 18h00 (Haladó)"
+                timeOne="15h30 - 17h00"
+                dayTwo="Szerda"
+                timeTwo="16h30 - 18h00"
+                dayThree="Péntek"
+                timeThree="16h30 - 18h00"
                 place="Fabriczius József Esti Gimnázium"
                 locationLink="https://goo.gl/maps/2oXK4EJ5zNP2"
                 location="(2112 VERESEGYHÁZ, FŐ ÚT 77.)"
