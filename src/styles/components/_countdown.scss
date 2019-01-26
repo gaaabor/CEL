@@ -1,0 +1,38 @@
+.countdown {
+   position: absolute;
+   left: 0;
+   bottom: 10vh;
+   border: 1px solid $color-primary;
+   padding: 2rem;
+   background-color: rgba($color-black, 0.7);
+   text-align: center;
+   @include respond(tab-lg) {
+      bottom: 0;
+   }
+   &__title {
+      font-size: 4rem;
+      color: $color-primary;
+      text-transform: uppercase;
+      font-family: $font-heading;
+   }
+   &__sub-title {
+      font-size: 2rem;
+      font-weight: 400;
+   }
+   &__timer {
+      font-size: 2.5rem;
+      font-family: $font-heading;
+      text-transform: uppercase;
+      span {
+         color: $color-primary;
+         font-weight: 700;
+         font-size: 3rem;
+      }
+   }
+   &__btn {
+      font-size: 1.5rem;
+      font-weight: 500;
+      width: 50%;
+      margin: 1rem auto 0;
+   }
+}

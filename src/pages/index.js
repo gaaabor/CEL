@@ -8,6 +8,7 @@ import Features from '../components/Features'
 import Shortcuts from '../components/Shortcuts'
 import Icon from '../components/Icon'
 import Button from '../components/Button'
+import CountDown from '../components/CountDown'
 
 const IndexPage = ({ data }) => (
   <Fragment>
@@ -27,6 +28,7 @@ const IndexPage = ({ data }) => (
           <Icon block="arrow" name="arrow-down" />
         </Anchor>
       </div>
+      <CountDown />
     </header>
 
     <main>
