@@ -48,7 +48,7 @@ const CountDown = props => (
     <div className="countdown__text">
       <h1 className="countdown__title">Batizado 2019</h1>
       <h3 className="countdown__sub-title">
-        Csoportunk idei Avatás és Övcsere eseménye már csak:
+        Csoportunk idei Avatás és övcseréje már csak:
       </h3>
     </div>
     <div className="countdown__timer">
