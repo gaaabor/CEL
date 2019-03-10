@@ -41,7 +41,7 @@ const Footer = () => (
     </div>
 
     <div className="footer__bottom">
-      <p>2018 | Capoeira Espirito Livre</p>
+      <p>2019 | Capoeira Espirito Livre</p>
       <p>
         Built by:{' '}
         <a
