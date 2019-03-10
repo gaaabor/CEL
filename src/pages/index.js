@@ -28,7 +28,6 @@ const IndexPage = ({ data }) => (
           <Icon block="arrow" name="arrow-down" />
         </Anchor>
       </div>
-      <CountDown />
     </header>
 
     <main>
