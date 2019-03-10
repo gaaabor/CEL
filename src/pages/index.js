@@ -8,7 +8,6 @@ import Features from '../components/Features'
 import Shortcuts from '../components/Shortcuts'
 import Icon from '../components/Icon'
 import Button from '../components/Button'
-import CountDown from '../components/CountDown'
 
 const IndexPage = ({ data }) => (
   <Fragment>
