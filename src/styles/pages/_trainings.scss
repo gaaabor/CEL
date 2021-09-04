@@ -13,10 +13,10 @@
   margin-top: 2rem;
   &__tab-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     border: $border;
     @include respond(tab-sm) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
     }
   }
   &__tab {
