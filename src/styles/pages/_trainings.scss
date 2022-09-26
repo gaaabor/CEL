@@ -11,16 +11,19 @@
 .react-tabs {
   -webkit-tap-highlight-color: transparent;
   margin-top: 2rem;
+
   &__tab-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     border: $border;
-    @include respond(tab-sm) {
-      grid-template-columns: 1fr;
+
+    & > * {
+      flex-basis: 50%;
+      width: 50%;
     }
   }
+
   &__tab {
-    width: 100%;
     list-style: none;
     padding: 0.8rem;
     font-size: 3.5rem;
@@ -32,25 +35,35 @@
     position: relative;
     transition: background-color 0.3s linear;
     border-right: $border;
+
     &--selected {
       color: $color-white;
       background-color: $color-primary;
     }
+
     &:focus {
       box-shadow: none;
       border-color: $border;
       outline: none;
     }
+
+    &:nth-child(-n + 2) {
+      border-bottom: $border;
+    }
+
     @include respond(tab-sm) {
       border-top: $border;
+
       &:hover {
         background-color: none;
       }
+
       &:last-of-type {
         grid-column: span 2;
       }
     }
   }
+
   &__tab-panel {
     display: none;
     opacity: 0;

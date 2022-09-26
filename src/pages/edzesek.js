@@ -12,6 +12,8 @@ const trainingsPage = () => (
         <div className="location-list">
           <TabList>
             <Tab>Újpalota</Tab>
+            <Tab>Gyömrő</Tab>
+            <Tab>Sopron</Tab>
             <Tab>Veresegyház</Tab>
           </TabList>
         </div>
@@ -31,13 +33,39 @@ const trainingsPage = () => (
           <TabPanel>
             <div className="card__container">
               <Card
-                dayOne="Hétfő"
+                dayOne="Kedd"
                 timeOne="19h00 - 20h30"
-                dayTwo="Péntek"
+                dayTwo="Csütörtök"
                 timeTwo="19h00 - 20h30"
-                place="Fabriczius József Esti Gimnázium"
-                locationLink="https://goo.gl/maps/2oXK4EJ5zNP2"
-                location="(2112 VERESEGYHÁZ, FŐ ÚT 77.)"
+                place="Régi Művelődési Ház"
+                locationLink="https://goo.gl/maps/oJDy9TnjCm3hYVPo9"
+                location="(2230 GYÖMRŐ, SZENT ISTVÁN ÚT 65-67.)"
+              />
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="card__container">
+              <Card
+                dayOne="Hétfő"
+                timeOne="17h00 - 18h30"
+                dayTwo="Szerda"
+                timeTwo="17h00 - 18h30"
+                place="Lackner Kristóf Általános Iskola"
+                locationLink="https://goo.gl/maps/HgQJvfqeqfLfN9se8"
+                location="(9400 SOPRON, RÉVAI MIKLÓS UTCA 2.)"
+              />
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="card__container">
+              <Card
+                dayOne="Hétfő"
+                timeOne="19h15 - 20h45"
+                dayTwo="Péntek"
+                timeTwo="19h15 - 20h45"
+                place="Váci Mihály Innovációs Centrum"
+                locationLink="https://goo.gl/maps/zs95w548ViegqUJ57"
+                location="(2112 VERESEGYHÁZ, FŐ ÚT 45-47.)"
               />
             </div>
           </TabPanel>
